@@ -1,0 +1,14 @@
+```mermaid
+flowchart TB
+  subgraph Grader UI
+    Header[Top nav: back to assignment, search, grader tools]
+    LeftPane[Left: Submission list, filters, assignment stats]
+    Center[Center: File explorer, code viewer, execution log]
+    RightPane[Right: Rubric, grade entry, comments panel]
+    Bottom[Bottom: Execution replay controls: play, step, seek, run tests in private sandbox]
+  end
+  Header --> LeftPane
+  Header --> Center
+  Header --> RightPane
+  Center --> Bottom
+```
