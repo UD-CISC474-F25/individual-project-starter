@@ -3,7 +3,6 @@
 - Instructor
 - Teaching Assistant (TA)
 - Course Admin / Administrator
-- Auto-grader / System (automated processes)
 
 ### Functional Requirements, grouped by role
 
