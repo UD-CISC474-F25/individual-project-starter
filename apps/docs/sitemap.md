@@ -1,5 +1,5 @@
 ```mermaid
-graph TD
+flowchart TD
   A[Landing / Login] --> B[Dashboard]
   B --> C[Courses]
   C --> D[Course Overview]

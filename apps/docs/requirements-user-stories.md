@@ -10,10 +10,9 @@
 #### Students
 - View enrolled courses, assignments, deadlines, and grades.
 - Download starter code and assignment materials.
-- Create and submit solutions: code uploads, repository link, notebook, or Replayable Submission.
-- Run tests locally in a provided sandbox environment, view test results.
-- Receive automated feedback and manual grader feedback.
-- View submission history, teacher comments, and detailed test logs.
+- Create and submit solutions: code uploads or repository link.
+- Receive manual grader feedback.
+- View submission history and teacher comments.
 - Resubmit until deadline if allowed.
 - See rubric and expected outputs before submission.
 - Participate in discussion threads for assignments, post clarifying questions.
@@ -25,11 +24,10 @@
 
 #### Instructors
 - Create and manage courses, assignments, and rubrics.
-- Upload starter code, test suites, and example solutions.
+- Upload starter code and example solutions.
 - Set submission types allowed, late policies, resubmission rules, and grading policy.
 - Assign TAs, view grading progress, and bulk release grades.
-- Review submissions using a replayable grader UI, leave inline comments, and adjust scores.
-- Configure automated grading scripts, test suites, and resource limits.
+- Review submissions, leave inline comments, and adjust scores.
 
 **User stories:**
 - As an instructor, I want to configure automatic tests that run on each submission, so I can provide instant feedback.
@@ -52,16 +50,8 @@
 **User stories:**
 - As an admin, I want to configure resource quotas per course, so heavy classes do not exhaust compute.
 
-#### System / Auto-grader
-- Run test suites on submission, generate logs and structured results.
-- Detect plagiarism using snapshot and token-based similarity checks, flag suspicious submissions.
-
-**User stories:**
-- As an automated system, I need to produce deterministic test outputs so instructors can rely on consistent grading.
-
 ### Non-functional requirements
 - Scalable
 - Secure
-- Extensible
 - Usable
 - Reproducible
