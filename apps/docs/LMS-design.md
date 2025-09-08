@@ -42,12 +42,16 @@ A unique feature: **Replayable Submission**: students submit code plus a recordi
 
 ### 3.1 [Dashboard](Dashboard-wireframe.png)
 
-### 3.2 [Assignment Page](wireframes-assignment.mmd)
+### 3.2 [Assignment Page](Assignments-wireframe.png)
+
+### 3.3 [Docs/FAQ Page](Docs-wireframe.png)
+
+### 3.4 [Grades Page](Grades-wireframe.png)
 
 
 ---
 
-## 4. [Data Model](data-model.mmd)
+## 4. [Data Model](data-model.md)
 
 ---
 
