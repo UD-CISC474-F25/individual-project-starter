@@ -1,72 +1,20 @@
-import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
+import Link from "next/link";
 import Header from "./_components/header";
+//import Footer from "./_components/footer";
 
-type Props = Omit<ImageProps, "src"> & {
-    srcLight: string;
-    srcDark: string;
-};
 
-const ThemeImage = (props: Props) => {
-    const { srcLight, srcDark, ...rest } = props;
-
-    return (
-        <>
-            <Image {...rest} src={srcLight} className="imgLight" />
-            <Image {...rest} src={srcDark} className="imgDark" />
-        </>
-    );
-};
 
 export default function Home() {
     return (
-        <div className={styles.page}>
+        <div>
             <Header />
-            <main className={styles.main}>
-                <h1>CISC474 Project Starter</h1>
-                <ol>
-                    <li>
-                        Get started by editing{" "}
-                        <code>apps/web/app/page.tsx</code>
-                    </li>
-                    <li>Save and see your changes instantly.</li>
-                </ol>
-
-                <Button appName="web" className={styles.secondary}>
-                    Open alert
-                </Button>
-            </main>
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com/templates?search=turborepo&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/window.svg"
-                        alt="Window icon"
-                        width={16}
-                        height={16}
-                    />
-                    Examples
-                </a>
-                <a
-                    href="https://turborepo.com?utm_source=create-turbo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/globe.svg"
-                        alt="Globe icon"
-                        width={16}
-                        height={16}
-                    />
-                    Go to turborepo.com →
-                </a>
-            </footer>
+            <div className="container mx-auto px-4 py-8">
+                <h1 className="text-4xl font-bold mb-4">Welcome to Our Web Application</h1>
+                <p className="text-lg mb-6">This is the home page of our awesome web application built with Next.js and Tailwind CSS.</p>
+                <a href="/about" className="text-blue-500 hover:underline">Learn more about us</a>
+                <Link href="/calendar" className="text-blue-500 hover:underline ml-4">View the Calendar</Link>
+            </div>
+            {/* <Footer /> */}
         </div>
     );
 }

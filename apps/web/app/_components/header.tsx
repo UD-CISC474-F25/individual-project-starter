@@ -11,5 +11,9 @@ export default function Header() {
         return <div className="relative w-full" ><Navbar01 /></div>;
     }
     */
-   return <div className="relative w-full" ><Navbar01 /></div>;
+   return( 
+        <div className="relative w-full" >
+            <Navbar01 />
+        </div>
+    );
 }
