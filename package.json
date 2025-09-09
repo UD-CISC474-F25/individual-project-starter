@@ -21,7 +21,7 @@
     "typescript": "5.9.2",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "tsx": "4.19.1"
+    "tsx": "4.20.5"
   },
   "prisma": {
     "schema": "packages/database/prisma/schema.prisma",
