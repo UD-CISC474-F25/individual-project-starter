@@ -1,4 +1,5 @@
 // port 3001
+import '../globals.css';
 
 export default function Home() {
   return (
