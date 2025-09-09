@@ -1,148 +1,162 @@
-# Requirements Document - Learning Management System
+# LMS MVP Requirements
 
-## Project Vision
-To create a flexible, user-friendly, and scalable Learning Management System that empowers learners, instructors, and administrators by providing a structured yet adaptable environment for managing programming problems structured around courses, assignments, submissions, and feedback. A unique feature of this LMS will be **interactive coding submission types**, where students can submit runnable code snippets with embedded test cases that professors/teaching assistants can execute directly within the LMS.
+## Student Requirements
 
-## User Roles
+### User Stories
+* As a student, I can view all my enrolled courses in one dashboard
+* As a student, I can see upcoming assignments with due dates
+* As a student, I can submit assignments (file upload or text)
+* As a student, I can view my grades and feedback
+* As a student, I can complete reflections with guided prompts
+* As a student, I can view and reply to comments on my submissions
 
-### 1. Institution Administrator
-**Description:** System-level administrator who oversees the entire LMS platform
-**Responsibilities:**
-- Manage institution-wide settings and policies
-- Oversee professor and TA accounts
-- Generate system-wide audit reports
-- Monitor platform usage and performance
+### Acceptance Criteria
+✓ Dashboard displays all enrolled courses
+✓ Assignment list shows due dates and submission status
+✓ File upload accepts common formats (PDF, TXT, ZIP)
+✓ Text submission supports basic formatting
+✓ Grades display with rubric notes when available
+✓ Comments show in threaded format with timestamps
+✓ Reflections show relevant course data before prompts
 
-### 2. Professor
-**Description:** Course instructor who creates and manages educational content
-**Responsibilities:**
-- Create and configure courses
-- Design assignments and rubrics
-- Grade student submissions
-- Provide detailed feedback to students
-- Manage teaching assistants
+---
 
-### 3. Teaching Assistant (TA)
-**Description:** Assistant who helps professors with course management
-**Responsibilities:**
-- Grade assignments within assigned courses
-- Provide feedback to students
-- Moderate course discussions
-- Assist with administrative tasks
+## Teaching Assistant Requirements
 
-### 4. Student
-**Description:** Learner enrolled in courses
-**Responsibilities:**
-- Enroll in courses
-- Submit assignments (including interactive code submissions)
-- View grades and feedback
-- Track academic progress
+### User Stories
+* As a TA, I can view all submissions for my assigned courses
+* As a TA, I can add comments to student submissions
+* As a TA, I can assign grades to submissions
+* As a TA, I can update grades with a reason
+* As a TA, I can filter submissions by status
+* As a TA, I can review reflection responses
+
+### Acceptance Criteria
+✓ Submission list shows student names and submission times
+✓ Comment system supports threaded replies
+✓ Grade entry validates format (numeric/letter)
+✓ Grade changes require and record a reason
+✓ Filter options include: graded/ungraded, late/on-time
+✓ Reflection summary shows quick tags (e.g., "needs help")
+
+---
+
+## Professor Requirements
+
+### User Stories
+* As a professor, I can create and manage courses
+* As a professor, I can create assignments with specifications
+* As a professor, I can review and grade all submissions
+* As a professor, I can update grades with documented reasons
+* As a professor, I can launch reflection assignments
+* As a professor, I can view aggregate reflection summaries
+* As a professor, I can post announcements to courses
+
+### Acceptance Criteria
+✓ Course creation includes name, term, and description
+✓ Assignment creation supports type selection (file/text/reflection)
+✓ Due dates are configurable per assignment
+✓ Grade updates log to activity history
+✓ Reflection templates support custom prompts
+✓ Reflection summaries filterable by tags/keywords
+✓ Announcements display on course overview
+
+---
+
+## Institution/Admin Requirements
+
+### User Stories
+* As an admin, I can view all courses in the system
+* As an admin, I can see enrollment counts per course
+* As an admin, I can view grade distributions
+* As an admin, I can access reflection trend summaries
+* As an admin, I can monitor system-wide activity
+
+### Acceptance Criteria
+✓ Course list shows term, instructor, enrollment count
+✓ Grade distribution displays as histogram or summary stats
+✓ Reflection trends highlight common themes/concerns
+✓ Activity log shows grade changes and key events
+✓ Export capability for enrollment and grade data
+
+---
 
 ## Core System Actions
 
 ### Submit Actions
-- **Student Submissions:** Upload files, write code in interactive editor, submit text responses
-- **Grade Submissions:** Professors/TAs submit grades with detailed rubrics
-- **Feedback Submissions:** Professors/TAs provide written feedback and comments
-- **Code Execution:** System executes student code against test cases
+* Submit assignment (Student)
+* Submit grade (TA/Professor)
+* Submit grade change with reason (TA/Professor)
+* Submit comment/reply (All roles)
+* Submit reflection response (Student)
 
-### Audit Actions
-- **Student Audit:** View personal grades, submission history, course progress
-- **Professor Audit:** Review all student submissions, grade distributions, course analytics
-- **Institution Audit:** System-wide performance metrics, user activity, compliance reports
+### View Actions
+* View personal grades (Student)
+* View course roster grades (TA/Professor)
+* View program-level grades (Admin)
+* View enrolled courses (Student)
+* View teaching courses (TA/Professor)
+* View all courses (Admin)
 
-## User Stories
+---
 
-### Student User Stories
-- **As a Student**, I want to view all my enrolled courses on a dashboard so that I can quickly access course materials and assignments.
-- **As a Student**, I want to submit code assignments using an interactive code editor so that I can test my solutions before submission.
-- **As a Student**, I want to see real-time feedback when my code runs against test cases so that I can debug and improve my solution.
-- **As a Student**, I want to view my grades and detailed feedback for each assignment so that I can understand how to improve.
-- **As a Student**, I want to track my progress across all courses so that I can manage my workload effectively.
-- **As a Student**, I want to resubmit assignments (if allowed) so that I can improve my grade after receiving feedback.
+## Reflection Feature Requirements
 
-### Professor User Stories
-- **As a Professor**, I want to create courses with customizable settings so that I can tailor the learning experience to my curriculum.
-- **As a Professor**, I want to design assignments with multiple submission types (file upload, text, interactive code) so that I can assess different types of learning.
-- **As a Professor**, I want to create interactive coding assignments with pre-defined test cases so that student code can be automatically validated.
-- **As a Professor**, I want to execute student code submissions safely in a sandboxed environment so that I can verify functionality without security risks.
-- **As a Professor**, I want to grade submissions with detailed rubrics so that students receive consistent and fair evaluations.
-- **As a Professor**, I want to provide rich text feedback with code comments so that students understand specific areas for improvement.
-- **As a Professor**, I want to manage teaching assistants and delegate grading responsibilities so that I can scale course management.
-- **As a Professor**, I want to view analytics on student performance and engagement so that I can adjust my teaching approach.
+### MVP Reflection Flow
+1. Student accesses reflection from assignment list
+2. System displays relevant data:
+   * Current average grade
+   * Recent comments from staff (last 3)
+   * Class median grade (anonymized)
+3. Student responds to guided prompts
+4. Response saved with optional tags
+5. Professor/TA reviews in summary view
 
-### Teaching Assistant User Stories
-- **As a TA**, I want to access assignments assigned to me for grading so that I can fulfill my responsibilities efficiently.
-- **As a TA**, I want to use the same grading interface as professors so that I can provide consistent feedback.
-- **As a TA**, I want to execute and test student code submissions so that I can verify correctness before grading.
-- **As a TA**, I want to communicate with professors about grading questions so that we maintain consistency.
+### Reflection Data Points
+* Grade trends
+* Recent feedback
+* Peer benchmarks (anonymized)
+* Activity metrics
+* Skill tag associations
 
-### Institution Administrator User Stories
-- **As an Institution Admin**, I want to manage professor and TA accounts so that I can control access to the system.
-- **As an Institution Admin**, I want to generate system-wide reports on usage and performance so that I can demonstrate value and identify issues.
-- **As an Institution Admin**, I want to configure institution-level policies and settings so that the system complies with our standards.
-- **As an Institution Admin**, I want to monitor system security and user activity so that I can ensure data protection.
+### Reflection Use Cases
+* Course reflection/survey
+* Peer benchmark reflection
+* Skill gap self-assessment
+* Collaboration reflection
+* Teaching effectiveness
+* Equity & inclusion monitoring
 
-## Functional Requirements
+---
 
-### Authentication & Authorization
-- **REQ-AUTH-001:** System shall support role-based access control with four distinct user types
-- **REQ-AUTH-002:** Users shall authenticate using secure login credentials
-- **REQ-AUTH-003:** System shall maintain session management with automatic timeout
-- **REQ-AUTH-004:** Password requirements shall enforce strong security practices
+## Technical Requirements
 
-### Course Management
-- **REQ-COURSE-001:** Professors shall be able to create, edit, and archive courses
-- **REQ-COURSE-002:** Students shall be able to enroll in courses (with professor approval if required)
-- **REQ-COURSE-003:** System shall support course hierarchies and prerequisites
-- **REQ-COURSE-004:** Courses shall have configurable visibility and enrollment settings
+### Authentication
+* School email login
+* Role-based access control
+* Session management
 
-### Assignment Management
-- **REQ-ASSIGN-001:** System shall support multiple assignment types: file upload, text submission, interactive code
-- **REQ-ASSIGN-002:** Interactive code assignments shall include an in-browser code editor
-- **REQ-ASSIGN-003:** Code submissions shall be executed against professor-defined test cases
-- **REQ-ASSIGN-004:** System shall provide secure, sandboxed code execution environment
-- **REQ-ASSIGN-005:** Assignments shall have configurable due dates, attempt limits, and late policies
-
-### Submission & Grading
-- **REQ-SUB-001:** Students shall be able to save draft submissions and submit when ready
-- **REQ-SUB-002:** System shall timestamp all submissions for audit purposes
-- **REQ-SUB-003:** Professors/TAs shall grade submissions using customizable rubrics
-- **REQ-SUB-004:** Grading interface shall support rich text feedback and code annotations
-- **REQ-SUB-005:** Students shall receive notifications when grades are published
-
-### Interactive Code Execution (Unique Feature)
-- **REQ-CODE-001:** Code editor shall support syntax highlighting for multiple programming languages
-- **REQ-CODE-002:** Students shall be able to run code against sample test cases before submission
-- **REQ-CODE-003:** System shall execute code in isolated containers for security
-- **REQ-CODE-004:** Test results shall display with clear pass/fail indicators and error messages
-- **REQ-CODE-005:** Professors shall be able to add hidden test cases not visible to students
-
-### Data Management & Analytics
-- **REQ-DATA-001:** System shall maintain comprehensive audit logs of all user actions
-- **REQ-DATA-002:** Professors shall access analytics on student performance and engagement
-- **REQ-DATA-003:** Students shall view their progress and grade trends over time
-- **REQ-DATA-004:** Institution admins shall generate system-wide usage and performance reports
-
-## Non-Functional Requirements
+### Data Management
+* File upload support (10MB limit)
+* Text submission with basic formatting
+* Grade history tracking
+* Comment threading
+* Activity logging for auditing
 
 ### Performance
-- **REQ-PERF-001:** Code execution shall complete within 30 seconds maximum
-- **REQ-PERF-002:** Page load times shall not exceed 3 seconds under normal conditions
-- **REQ-PERF-003:** System shall support concurrent access by up to 1000 active users
+* Dashboard loads in < 2 seconds
+* Assignment list paginated (25 per page)
+* Real-time comment updates
+* Async file upload processing
 
-### Security
-- **REQ-SEC-001:** All data transmission shall use HTTPS encryption
-- **REQ-SEC-002:** Code execution environment shall be completely sandboxed
-- **REQ-SEC-003:** User data shall be encrypted at rest
-- **REQ-SEC-004:** System shall implement protection against common web vulnerabilities (OWASP Top 10)
+---
 
-### Usability
-- **REQ-USE-001:** Interface shall be responsive and work on desktop, tablet, and mobile devices
-- **REQ-USE-002:** System shall be accessible to users with disabilities (WCAG 2.1 AA compliance)
-- **REQ-USE-003:** Error messages shall be clear and provide actionable guidance
-
-### Scalability
-- **REQ-SCALE-001:** System architecture shall support horizontal scaling
-- **REQ-SCALE-002:** Database shall handle growth in users and submissions over time
-- **REQ-SCALE-003:** File storage shall scale to accommodate large submissions and media files
+## Out of Scope (v1)
+* Complex rubric builders
+* Multi-file repository submissions
+* Automated late penalties
+* Deep analytics dashboards
+* Real-time collaboration
+* In-app messaging/chat
+* Plagiarism detection
+* LTI integration
