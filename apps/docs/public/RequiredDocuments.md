@@ -3,7 +3,7 @@
 This links to all required documents
 
 ## Requirements Document
-- [requirementsDoc.md](./requirementsDoc)
+- [requirementsDoc.md](./requirementsDoc.md)
 
 ---
 
