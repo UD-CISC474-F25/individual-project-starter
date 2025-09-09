@@ -1,6 +1,7 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import Header from "./_components/header";
 
 type Props = Omit<ImageProps, "src"> & {
     srcLight: string;
@@ -21,6 +22,7 @@ const ThemeImage = (props: Props) => {
 export default function Home() {
     return (
         <div className={styles.page}>
+            <Header />
             <main className={styles.main}>
                 <h1>CISC474 Project Starter</h1>
                 <ol>
