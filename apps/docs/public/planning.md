@@ -238,11 +238,26 @@ Place all files **in** `apps/docs/public/` and link them below. Keep language co
 
 ## Tiny Checklist
 
-* [ ] Requirements cover Students, TAs, Professors, Institution.
-* [ ] Actions include: submit assignment, grade/change grade, comment/reply; views for grades/courses.
-* [ ] Reflection flow shows data + prompts and a simple summary view.
-* [ ] Site map lists MVP pages.
-* [ ] Wireframes exist for 5 key screens.
-* [ ] Data model diagram includes the basic nouns and relationships.
+* [x] Requirements cover Students, TAs, Professors, Institution.
+* [x] Actions include: submit assignment, grade/change grade, comment/reply; views for grades/courses.
+* [x] Reflection flow shows data + prompts and a simple summary view.
+* [x] Site map lists MVP pages.
+* [x] Wireframes exist for 5 key screens.
+* [x] Data model diagram includes the basic nouns and relationships.
+
+---
+
+## AI Assistance Disclosure
+
+This project planning documentation was created with assistance from Claude AI (Anthropic). The AI helped with:
+
+- Expanding the initial MVP concept into detailed requirements
+- Creating comprehensive user stories and acceptance criteria  
+- Designing site navigation flow and URL structure
+- Developing ASCII wireframes for key user interfaces
+- Building the entity relationship diagram with proper relationships
+- Organizing and formatting all documentation for clarity
+
+The unique "Reflection" submission feature concept and overall LMS vision were human-generated, with AI assistance in implementation planning and detailed specification.
 
 ---
