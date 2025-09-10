@@ -19,7 +19,6 @@ export default function Navbar() {
           height={32}
           className="rounded-full border border-white object-cover"
         />
-
         <span className="ml-3">User Profile</span>
       </Link>
       <div className="p-2 rounded-sm flex items-center justify-center text-2xl ml-auto hover:cursor-pointer">
