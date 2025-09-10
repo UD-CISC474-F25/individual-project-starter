@@ -4,5 +4,8 @@
     "baseUrl": "./",
     "outDir": "./dist",
     "ignoreDeprecations": "6.0"
+  },
+  "paths": {
+    "@/*": ["./*"],
   }
 }
