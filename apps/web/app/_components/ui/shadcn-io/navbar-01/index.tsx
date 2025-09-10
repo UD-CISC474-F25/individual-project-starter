@@ -16,7 +16,6 @@ import {
 } from '@/_components/ui/popover';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import { ThemeToggle } from '@/_components/ui/theme-toggle';
 
 // Simple logo component for the navbar
 const Logo = (props: React.SVGAttributes<SVGElement>) => {
@@ -235,8 +234,6 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
           </div>
           {/* Right side */}
           <div className="flex items-center gap-3">
-            {/* Dark Mode Toggle */}
-            <ThemeToggle />
             {onSignInClick ? (
               <Button
                 variant="ghost"
