@@ -86,11 +86,13 @@ System managers who oversee students, professors and courses.
 - Written feedback system
 - Grade book management
 
-### Unique Feature: AI Assistant
+### Unique Feature & Submission: AI Assistant
 
 - Helps students keep up to date with assignemnt deadline
 - Helps student prioritize coureses with low grade
 - Summerizes announcements and reminds you of certain tasks that needs to be done.
+- Submit with AI, Where AI checks whether you have followed all the instructions correctly.
+- AI does not tell you the answer, but reminds you whether you have forgotten something or missing a requirement.
 
 ## Success Criteria
 
