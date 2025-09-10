@@ -1,3 +1,5 @@
+'use client';
+
 import { Navbar01 } from "./ui/shadcn-io/navbar-01";
 import { Navbar05 } from "./ui/shadcn-io/navbar-05";
 
@@ -13,7 +15,16 @@ export default function Header() {
     */
    return( 
         <div className="relative w-full" >
-            <Navbar01 />
+            <Navbar01 
+                signInHref="/login"
+                ctaHref="/signup"
+                navigationLinks={[
+                    { href: '#', label: 'Home', active: true },
+                    { href: '#features', label: 'Features' },
+                    { href: '#pricing', label: 'Pricing' },
+                    { href: '#about', label: 'About' },
+                ]}
+            />
         </div>
     );
 }

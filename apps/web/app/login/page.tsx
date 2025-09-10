@@ -20,7 +20,7 @@ export default function SignIn() {
   const [rememberMe, setRememberMe] = useState(false);
 
   return (
-    <Card className="max-w-md">
+    <Card className="max-w-md justify-center mx-auto mt-20">
       <CardHeader>
         <CardTitle className="text-lg md:text-xl">Sign In</CardTitle>
         <CardDescription className="text-xs md:text-sm">
@@ -107,7 +107,7 @@ export default function SignIn() {
           <Button
               variant="secondary"
               disabled={loading}
-              className="gap-2"
+              className="gap-2 hover:scale-[1.02] transition-transform w-full"
               onClick={async () => {
               await signIn.passkey(
                 {
