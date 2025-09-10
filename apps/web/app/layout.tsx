@@ -13,8 +13,10 @@ export default function RootLayout({
         <header>
           <Navbar />
         </header>
-        {children}
-        <Footer />
+        <main className="flex-grow">{children}</main>
+        <div className="relative">
+          <Footer />
+        </div>
       </body>
     </html>
   );
