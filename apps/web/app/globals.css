@@ -1,1 +1,2 @@
-@import "tailwindcss";
+@import './test.css';
+@import 'tailwindcss';
