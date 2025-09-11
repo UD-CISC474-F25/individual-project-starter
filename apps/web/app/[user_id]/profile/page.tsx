@@ -31,8 +31,8 @@ export default async function UserProfile({
               </div>
             </Link>
           </div>
-          <p className="mt-1">Name: John Doe</p>
-          <p>Email: john.doe@example.edu</p>
+          <p className="mt-1">Name: Hairum Qureshi</p>
+          <p>Email: hairum.qureshi@example.edu</p>
         </div>
       </div>
       <div className="bg-sky-900 text-white p-2 rounded-md mt-1">
