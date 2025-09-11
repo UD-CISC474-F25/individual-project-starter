@@ -14,7 +14,7 @@ export default function RootLayout({
         <header className="sm:block">
           <Navbar />
         </header>
-        <main className="flex w-full">
+        <main className="flex w-full flex-grow">
           <div className="w-1/4 bg-sky-950 hidden lg:block">
             <SideNavbar />
           </div>
