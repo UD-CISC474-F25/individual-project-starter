@@ -35,14 +35,20 @@ export default async function UserProfile({
           <p>Email: hairum.qureshi@example.edu</p>
         </div>
       </div>
-      <div className="bg-sky-900 text-white p-2 rounded-md mt-1">
+      <div className="p-2 rounded-md mt-2 bg-slate-200">
         <h2 className="text-xl font-semibold">User Bio</h2>
-        <p className="mt-2 text-sm">
+        <p className="mt-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
           dolor, sit amet consectetur adipisicing elit. Cupiditate, nemo. Sit
           est laboriosam perspiciatis enim fuga nulla, officia neque
           exercitationem cumque, eos possimus deleniti, veritatis nemo. Corrupti
-          obcaecati libero debitis.
+          obcaecati libero debitis. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Pariatur tempore quos, quod ea recusandae error nisi
+          commodi architecto voluptatibus. Numquam ab veniam sunt beatae iste
+          velit eaque ex odit excepturi. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Porro pariatur veniam nam necessitatibus quae, ea
+          numquam repellat sint ut illum voluptate ipsum quod architecto
+          reiciendis velit eos exercitationem nemo? Doloremque.
         </p>
       </div>
       <div className="w-full">
