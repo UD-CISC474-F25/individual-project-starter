@@ -36,7 +36,7 @@ export default function Navbar() {
   ].filter((course) => course.id !== params.course_id);
 
   return (
-    <div className="bg-sky-950 w-full h-14 p-1.5 text-white flex items-center">
+    <div className="lg:hidden md:block bg-sky-950 w-full h-14 p-1.5 text-white flex items-center">
       <Link
         href="/123/profile"
         className="flex items-center w-full p-1.5 rounded-sm bg-cyan-900 hover:cursor-pointer"
