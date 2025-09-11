@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import defaultUserPfp from '../public/assets/default-user-pfp.jpg';
+import defaultUserPfp from '../../public/assets/default-user-pfp.jpg';
 import Link from 'next/link';
 import { useState } from 'react';
 import { IoCloseSharp } from 'react-icons/io5';
