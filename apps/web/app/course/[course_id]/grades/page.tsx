@@ -3,7 +3,12 @@ import Assignment from '../../../../components/Assignment';
 
 // TODO - add a magnifying glass icon to the search bar
 
-export default function Grades({ params }: { params: { course_id: string } }) {
+export default async function Grades({
+  params,
+}: {
+  params: Promise<{ course_id: string }>;
+}) {
+  const course_id = (await params).course_id;
   return (
     <div className="w-full p-2">
       <div className="w-full p-2 bg-slate-800 rounded-md text-2xl text-white font-semibold">
@@ -20,7 +25,7 @@ export default function Grades({ params }: { params: { course_id: string } }) {
         {Array.from({ length: 10 }).map((_, index) => (
           <Link
             key={index}
-            href={`/course/${params.course_id}/assignment/${Math.floor(Number(new Date()) * Math.random())}`}
+            href={`/course/${course_id}/assignment/${Math.floor(Number(new Date()) * Math.random())}`}
           >
             <Assignment
               assignmentTitle={`Assignment ${index + 1}`}

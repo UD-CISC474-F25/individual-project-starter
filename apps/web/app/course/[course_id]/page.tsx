@@ -1,4 +1,3 @@
-
 const courses: Record<string, string> = {
   '1234': 'Course 1',
   '5678': 'Course 2',
@@ -7,8 +6,13 @@ const courses: Record<string, string> = {
   '1314': 'Course 5',
 };
 
-export default function Course({ params }: { params: { course_id: string } }) {
-  const courseName = courses[params.course_id];
+export default async function Course({
+  params,
+}: {
+  params: Promise<{ course_id: string }>;
+}) {
+  const course_id = (await params).course_id;
+  const courseName = courses[course_id];
   return (
     <>
       <div className="p-3 bg-cyan-700 text-white rounded-md m-3">
