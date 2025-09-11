@@ -85,7 +85,7 @@ export default function Navbar() {
                 href={`/course/${params.course_id}/media`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Media
+                Media & Files
               </Link>
               <hr className="border-sky-700" />
               <span className="text-sky-300">Other Courses:</span>
