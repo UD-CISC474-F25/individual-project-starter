@@ -1,3 +1,9 @@
+interface PageProps {
+  params: {
+    course_id: string;
+  };
+}
+
 const courses: Record<string, string> = {
   '1234': 'Course 1',
   '5678': 'Course 2',
@@ -6,7 +12,7 @@ const courses: Record<string, string> = {
   '1314': 'Course 5',
 };
 
-export default function page({ params }: { params: { course_id: string } }) {
+export default function page({ params }: PageProps) {
   const courseName = courses[params.course_id];
   return (
     <>
