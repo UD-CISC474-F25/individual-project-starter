@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import defaultUserPfp from '../public/assets/default-user-pfp.jpg';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoCloseSharp } from 'react-icons/io5';
 import { useParams } from 'next/navigation';
 
@@ -60,19 +60,41 @@ export default function Navbar() {
         <div className="w-full border-b-3 border-sky-700 bg-sky-950 p-2 h-auto absolute top-14 right-0">
           {params.course_id ? (
             <div className="flex flex-col gap-3">
-              <Link href="/">Dashboard</Link>
-              <Link href={`/course/${params.course_id}/grades`}>Grades</Link>
-              <Link href={`/course/${params.course_id}/assignments`}>
+              <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                Dashboard
+              </Link>
+              <Link
+                href={`/course/${params.course_id}/grades`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Grades
+              </Link>
+              <Link
+                href={`/course/${params.course_id}/assignments`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Assignments
               </Link>
-              <Link href={`/course/${params.course_id}/syllabus`}>
+              <Link
+                href={`/course/${params.course_id}/syllabus`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Syllabus
               </Link>
-              <Link href={`/course/${params.course_id}/media`}>Media</Link>
+              <Link
+                href={`/course/${params.course_id}/media`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Media
+              </Link>
               <hr className="border-sky-700" />
               <span className="text-sky-300">Other Courses:</span>
               {courses.map((course) => (
-                <Link key={course.id} href={`/course/${course.id}`}>
+                <Link
+                  key={course.id}
+                  href={`/course/${course.id}`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   {course.name}
                 </Link>
               ))}
