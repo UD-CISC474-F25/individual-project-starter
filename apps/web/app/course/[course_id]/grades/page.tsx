@@ -3,7 +3,13 @@ import Assignment from '../../../../components/Assignment';
 
 // TODO - add a magnifying glass icon to the search bar
 
-export default function Grades({ params }: { params: { course_id: string } }) {
+interface PageProps {
+  params: {
+    course_id: string;
+  };
+}
+
+export default function Grades({ params }: PageProps) {
   return (
     <div className="w-full p-2">
       <div className="w-full p-2 bg-slate-800 rounded-md text-2xl text-white font-semibold">

@@ -12,7 +12,7 @@ const courses: Record<string, string> = {
   '1314': 'Course 5',
 };
 
-export default function page({ params }: PageProps) {
+export default function Course({ params }: PageProps) {
   const courseName = courses[params.course_id];
   return (
     <>
