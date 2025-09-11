@@ -8,7 +8,7 @@ export default function File({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex text-base items-center m-2">
+    <div className="flex text-base items-center mx-2 my-2 hover:bg-sky-100 hover:cursor-pointer p-2 rounded-sm">
       <p className="flex items-center text-sky-700 hover:cursor-pointer hover:text-sky-800">
         <span className="mr-2">{children}</span>
         <u>{text}</u>
