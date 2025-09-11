@@ -18,11 +18,13 @@ export default async function Course({
       <div className="p-3 bg-cyan-700 text-white rounded-md m-3">
         Hello Hairum Qureshi, welcome to {courseName}!
       </div>
-      <div className="w-[95%] p-2 border border-sky-950 bg-cyan-950 text-white m-auto my-3 rounded-md">
-        <h2 className="text-xl font-semibold">Recent Announcements</h2>
-        <p className="text-sm my-3 text-sky-300">
-          There are currently no recent announcements.
-        </p>
+      <div className="m-3 p-2 border border-sky-950 bg-cyan-950 text-white my-3 rounded-md">
+        <h2 className="text-xl font-semibold">Upcoming Deadlines</h2>
+        <div>
+          <p className="text-sm my-3 text-sky-300">
+            There are currently no upcoming deadlines.
+          </p>
+        </div>
       </div>
       <div className="m-3 p-2 border border-sky-950 bg-blue-950 text-white my-3 rounded-md">
         <h2 className="text-xl font-semibold">Upcoming Deadlines</h2>

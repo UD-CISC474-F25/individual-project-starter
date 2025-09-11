@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Assignment from '../../../../components/Assignment';
-
-// TODO - add a magnifying glass icon to the search bar
+import { FaMagnifyingGlass } from 'react-icons/fa6';
 
 export default async function Grades({
   params,
@@ -10,15 +9,16 @@ export default async function Grades({
 }) {
   const course_id = (await params).course_id;
   return (
-    <div className="w-full p-2">
-      <div className="w-full p-2 bg-slate-800 rounded-md text-2xl text-white font-semibold">
+    <div className="w-full h-screen overflow-y-auto p-2">
+      <div className="w-full p-2 text-white bg-cyan-900 rounded-md text-2xl font-semibold">
         Grade: <span className="text-green-400">100% (A+)</span>
       </div>
-      <div>
+      <div className="relative w-full my-5">
+        <FaMagnifyingGlass className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
         <input
           type="text"
-          className="w-full p-2.5 bg-sky-950 rounded-sm text-white my-3 outline-none"
-          placeholder="Search for assignments..."
+          placeholder="Search files or media..."
+          className="w-full border-2 border-slate-700 rounded-md pl-10 pr-3 py-2 outline-none"
         />
       </div>
       <div>
@@ -31,7 +31,6 @@ export default async function Grades({
               assignmentTitle={`Assignment ${index + 1} - click me!`}
               score={10}
               outOf={10}
-              date={`9/${index + 1}/2025`}
             />
           </Link>
         ))}
