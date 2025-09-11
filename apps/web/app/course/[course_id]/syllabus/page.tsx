@@ -1,8 +1,8 @@
 export default function page() {
   return (
     <div className="w-full p-2">
-      <h2 className="font-semibold text-2xl">Course Syllabus</h2>
-      <div className="my-3">
+      <h2 className="font-semibold text-2xl m-5">Course Syllabus</h2>
+      <div className="m-5">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id
           laboriosam numquam ab soluta nesciunt, ipsum dolor officia. Odit
