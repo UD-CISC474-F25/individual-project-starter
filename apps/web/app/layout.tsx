@@ -20,9 +20,9 @@ export default function RootLayout({
           </div>
           <div className="lg:w-4/5 w-full lg:m-0 m-3">{children}</div>
         </main>
-        <footer className="w-full p-2 bg-black">
+        {/* <footer className="w-full p-2 bg-black">
           <Footer />
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
