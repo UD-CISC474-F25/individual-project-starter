@@ -9,14 +9,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col min-h-screen">
         <header>
           <Navbar />
         </header>
         <main className="flex-grow">{children}</main>
-        {/* <div>
+        <footer className="w-full p-2 bg-black">
           <Footer />
-        </div> */}
+        </footer>
       </body>
     </html>
   );
