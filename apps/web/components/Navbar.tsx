@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import defaultUserPfp from '../public/assets/default-user-pfp.jpg';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { IoCloseSharp } from 'react-icons/io5';
 import { useParams } from 'next/navigation';
 
@@ -38,7 +38,7 @@ export default function Navbar() {
   return (
     <div className="bg-sky-950 w-full h-14 p-1.5 text-white flex items-center">
       <Link
-        href="/profile/123"
+        href="/123/profile"
         className="flex items-center w-full p-1.5 rounded-sm bg-cyan-900 hover:cursor-pointer"
       >
         <Image
