@@ -100,7 +100,20 @@ export default function Navbar() {
               ))}
             </div>
           ) : (
-            'no course ID'
+            <div className="flex flex-col gap-3">
+              <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                Dashboard
+              </Link>
+              {courses.map((course) => (
+                <Link
+                  key={course.id}
+                  href={`/course/${course.id}`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {course.name}
+                </Link>
+              ))}
+            </div>
           )}
         </div>
       )}
