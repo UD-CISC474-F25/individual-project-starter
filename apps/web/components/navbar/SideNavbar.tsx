@@ -54,7 +54,7 @@ export default function SideNavbar() {
             <Link href={`/course/${course_id}/grades`}>Grades</Link>
             <Link href={`/course/${course_id}/assignments`}>Assignments</Link>
             <Link href={`/course/${course_id}/syllabus`}>Syllabus</Link>
-            <Link href={`/course/${course_id}/media`}>Media</Link>
+            <Link href={`/course/${course_id}/media`}>Media & Files</Link>
             <hr className="border-sky-700" />
             <span className="text-sky-300">Other Courses:</span>
             {courses.map((course) => (
