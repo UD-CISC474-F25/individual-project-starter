@@ -28,7 +28,7 @@ export default async function Grades({
             href={`/course/${course_id}/assignment/${Math.floor(Number(new Date()) * Math.random())}`}
           >
             <Assignment
-              assignmentTitle={`Assignment ${index + 1}`}
+              assignmentTitle={`Assignment ${index + 1} - click me!`}
               score={10}
               outOf={10}
               date={`9/${index + 1}/2025`}
