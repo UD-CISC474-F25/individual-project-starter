@@ -13,9 +13,8 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/_components/ui/popover';
+  } from '@/_components/ui/popover';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
 
 // Simple logo component for the navbar
 const Logo = (props: React.SVGAttributes<SVGElement>) => {
@@ -105,12 +104,12 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
     {
       className,
       logo = <Logo />,
-      logoHref = '/',
+      logoHref = '#',
       navigationLinks = defaultNavigationLinks,
       signInText = 'Sign In',
-      signInHref = '/login',
+      signInHref = '#signin',
       ctaText = 'Get Started',
-      ctaHref = '/signup',
+      ctaHref = '#get-started',
       onSignInClick,
       onCtaClick,
       ...props
@@ -234,48 +233,27 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
           </div>
           {/* Right side */}
           <div className="flex items-center gap-3">
-            {onSignInClick ? (
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onSignInClick();
-                }}
-              >
-                {signInText}
-              </Button>
-            ) : (
-              <Button
-                asChild
-                variant="ghost"
-                size="sm"
-                className="text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-              >
-                <Link href={signInHref!}>{signInText}</Link>
-              </Button>
-            )}
-            {onCtaClick ? (
-              <Button
-                size="sm"
-                className="text-sm font-medium px-4 h-9 rounded-md shadow-sm"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onCtaClick();
-                }}
-              >
-                {ctaText}
-              </Button>
-            ) : (
-              <Button
-                asChild
-                size="sm"
-                className="text-sm font-medium px-4 h-9 rounded-md shadow-sm"
-              >
-                <Link href={ctaHref!}>{ctaText}</Link>
-              </Button>
-            )}
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+              onClick={(e) => {
+                e.preventDefault();
+                if (onSignInClick) onSignInClick();
+              }}
+            >
+              {signInText}
+            </Button>
+            <Button
+              size="sm"
+              className="text-sm font-medium px-4 h-9 rounded-md shadow-sm"
+              onClick={(e) => {
+                e.preventDefault();
+                if (onCtaClick) onCtaClick();
+              }}
+            >
+              {ctaText}
+            </Button>
           </div>
         </div>
       </header>
