@@ -11,7 +11,7 @@ export default async function Grades({
   return (
     <div className="w-full h-screen overflow-y-auto p-2">
       <div className="w-full p-2 text-white bg-cyan-900 rounded-md text-2xl font-semibold">
-        Grade: <span className="text-green-400">100% (A+)</span>
+        Grade: <span className="text-yellow-400">100% (A+)</span>
       </div>
       <div className="relative w-full my-5">
         <FaMagnifyingGlass className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
