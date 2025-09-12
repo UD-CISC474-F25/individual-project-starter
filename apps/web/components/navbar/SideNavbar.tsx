@@ -9,8 +9,6 @@ export default function SideNavbar() {
   const params = useParams();
   const course_id = params?.course_id as string | undefined;
 
-  // TODO - the navbar should also display a link back to the course page if the user is on a course subpage (e.g., /course/[course_id]/grades)
-
   const courses = [
     {
       id: '1234',
@@ -34,8 +32,6 @@ export default function SideNavbar() {
     },
   ].filter((course) => course.id !== course_id);
 
-  // TODO - add background color hover effect to links
-
   return (
     <div className="w-full h-screen p-2 text-white">
       <Link
@@ -54,16 +50,47 @@ export default function SideNavbar() {
       <div className="border-sky-700 bg-sky-950 p-2 h-auto">
         {course_id ? (
           <div className="flex flex-col gap-3">
-            <Link href="/">Dashboard</Link>
-            <Link href={`/course/${course_id}`}>Course Page</Link>
-            <Link href={`/course/${course_id}/grades`}>Grades</Link>
-            <Link href={`/course/${course_id}/assignments`}>Assignments</Link>
-            <Link href={`/course/${course_id}/syllabus`}>Syllabus</Link>
-            <Link href={`/course/${course_id}/media`}>Media & Files</Link>
+            <Link href="/" className="hover:bg-sky-900 p-1 hover:rounded-sm">
+              Dashboard
+            </Link>
+            <Link
+              href={`/course/${course_id}`}
+              className="hover:bg-sky-900 p-1 hover:rounded-sm"
+            >
+              Course Page
+            </Link>
+            <Link
+              href={`/course/${course_id}/grades`}
+              className="hover:bg-sky-900 p-1 hover:rounded-sm"
+            >
+              Grades
+            </Link>
+            <Link
+              href={`/course/${course_id}/assignments`}
+              className="hover:bg-sky-900 p-1 hover:rounded-sm"
+            >
+              Assignments
+            </Link>
+            <Link
+              href={`/course/${course_id}/syllabus`}
+              className="hover:bg-sky-900 p-1 hover:rounded-sm"
+            >
+              Syllabus
+            </Link>
+            <Link
+              href={`/course/${course_id}/media`}
+              className="hover:bg-sky-900 p-1 hover:rounded-sm"
+            >
+              Media & Files
+            </Link>
             <hr className="border-sky-700" />
             <span className="text-sky-300">Other Courses:</span>
             {courses.map((course) => (
-              <Link key={course.id} href={`/course/${course.id}`}>
+              <Link
+                key={course.id}
+                href={`/course/${course.id}`}
+                className="hover:bg-sky-900 p-1 hover:rounded-sm"
+              >
                 {course.name}
               </Link>
             ))}
