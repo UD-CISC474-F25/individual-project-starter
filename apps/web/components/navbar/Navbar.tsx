@@ -40,6 +40,7 @@ export default function Navbar() {
       <Link
         href="/123/profile"
         className="flex items-center w-full p-1.5 rounded-sm bg-cyan-900 hover:cursor-pointer"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <Image
           src={defaultUserPfp}
