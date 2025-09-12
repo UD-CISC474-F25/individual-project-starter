@@ -2,9 +2,11 @@ import { FaDownload } from 'react-icons/fa6';
 
 export default function File({
   text,
+  fileSize,
   children,
 }: {
   text: string;
+  fileSize: string;
   children: React.ReactNode;
 }) {
   return (
@@ -13,7 +15,8 @@ export default function File({
         <span className="mr-2">{children}</span>
         <u>{text}</u>
       </p>
-      <p className="ml-auto hover:cursor-pointer text-sky-700">
+      <p className="ml-auto hover:cursor-pointer text-sky-700 flex items-center">
+        <span className="mx-2 text-slate-400 text-sm">{fileSize}</span>
         <FaDownload />
       </p>
     </div>
