@@ -33,7 +33,7 @@ export default function Navbar() {
       id: '1314',
       name: 'Course 5',
     },
-  ].filter((course) => course.id !== params.course_id);
+  ];
 
   return (
     <div className="lg:hidden flex bg-sky-950 w-full h-14 p-1.5 text-white items-center">
@@ -62,6 +62,12 @@ export default function Navbar() {
             <div className="flex flex-col gap-3">
               <Link href="/" onClick={() => setIsMenuOpen(false)}>
                 Dashboard
+              </Link>
+              <Link
+                href={`/course/${params.course_id}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Course Page
               </Link>
               <Link
                 href={`/course/${params.course_id}/grades`}
