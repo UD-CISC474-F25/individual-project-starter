@@ -8,11 +8,11 @@ export default function Assignment({
   outOf: number;
 }) {
   return (
-    <div className="flex mb-4 p-3 border-2 border-slate-500 bg-slate-400 rounded-md w-full text-white">
+    <div className="flex mb-4 p-3 border-2 border-slate-500 bg-sky-950 rounded-md w-full text-white">
       {assignmentTitle}
       <div className="ml-auto flex">
         <div className="text-right">
-          <span className="text-lg font-semibold text-sky-700">{score}</span>/
+          <span className="text-lg font-semibold text-sky-600">{score}</span>/
           {outOf}
         </div>
       </div>
