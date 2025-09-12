@@ -21,9 +21,9 @@ export default function Module({
       className="m-3 border border-slate-300 rounded-md"
       onClick={() => setIsCollapsed(!collapsed)}
     >
-      <div className="flex items-center p-3 w-full bg-slate-700 text-white rounded-tr-md rounded-tl-md">
+      <div className="flex items-center hover:cursor-pointer p-3 w-full bg-slate-700 text-white rounded-tr-md rounded-tl-md">
         {moduleName}
-        <span className="ml-auto text-xl hover:cursor-pointer">
+        <span className="ml-auto text-xl">
           {!collapsed ? <FaChevronCircleDown /> : <FaChevronCircleUp />}
         </span>
       </div>
