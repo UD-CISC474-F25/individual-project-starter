@@ -25,7 +25,7 @@ export default function Page() {
         </div>
         <div className="w-full p-1 bg-slate-200 mt-4">
           <div className="flex justify-end items-center gap-2">
-            <div className="w-1/4 bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+            <div className="lg:w-1/4 w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
               <div
                 className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500"
                 style={{ width: '3%' }}
