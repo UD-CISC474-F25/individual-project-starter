@@ -1,23 +1,47 @@
-import React from 'react'
+'use client'
+import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
-  return (
-    <>
-        <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
-            <a href="">
-                <h3 className='w-28 cursor-pointer mr-14'>Codify</h3>
-            </a>
-            <ul>
-                <li><a href='#top'>Home</a></li>
-                <li><a href='about'>About</a></li>
-                <li><a href='signup'>Sign Up</a></li>
-                <li><a href='login'>Login</a></li>
-            </ul>
-            <div>
-            </div>
+  const [isScrolled, setIsScrolled] = useState(false)
 
-        </nav>
-    </>
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  return (
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="nav-content">
+        <Link href="/" className="logo">
+          <div className="logo-icon">C</div>
+          <span className="logo-text">Codify</span>
+        </Link>
+
+        <ul className="nav-links">
+          <li><Link href="#features">Features</Link></li>
+          <li><Link href="#about">About</Link></li>
+          <li><Link href="#contact">Contact</Link></li>
+        </ul>
+
+        <div className="nav-buttons">
+          <Link href="/login" className="btn-login">Login</Link>
+          <Link href="/signup" className="btn-signup">Sign Up</Link>
+        </div>
+
+        <button className="mobile-menu-btn">
+          <div className="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </nav>
   )
 }
 
