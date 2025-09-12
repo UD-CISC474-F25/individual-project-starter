@@ -23,8 +23,8 @@ export default function Header() {
                 onNavItemClick={(href) => router.push(href)}
                 navigationLinks={[
                     { href: '/dashboard', label: 'Dashboard' },
+                    { href: '/courses', label: 'Courses' },
                     { href: '/calendar', label: 'Calendar' },
-                    { href: '/about', label: 'About' },
                 ]}
                 
             />

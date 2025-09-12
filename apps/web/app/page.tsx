@@ -37,10 +37,11 @@ export default function Home() {
                     <h2 className="text-3xl font-semibold mb-4">Pages for Assignment: Learning NextJS</h2>
                     <ul className="list-disc list-inside space-y-2">
                         <li>Page One: <Link href="/dashboard" className="text-blue-500 hover:underline ml-4">Dashboard</Link></li>   
-                        <li>Page Two: <Link href="/calendar" className="text-blue-500 hover:underline ml-4">Calendar</Link></li>
-                        <li>Page Three: <Link href="/" className="text-blue-500 hover:underline ml-4">3</Link></li>
-                        <li>Page Four: <Link href="/login" className="text-blue-500 hover:underline ml-4">Login</Link></li>
-                        <li>Page Five: <Link href="/signup" className="text-blue-500 hover:underline ml-4">Signup</Link></li>
+                        <li>Page Two: <Link href="/courses" className="text-blue-500 hover:underline ml-4">Courses</Link></li>
+                        <li>Page Three: <Link href="/calendar" className="text-blue-500 hover:underline ml-4">Calendar</Link></li>
+                        <li>Page Four: <Link href="/courses/grades" className="text-blue-500 hover:underline ml-4">Grades</Link></li>
+                        <li>Page Five: <Link href="/login" className="text-blue-500 hover:underline ml-4">Login</Link></li>
+                        <li>Page Six: <Link href="/signup" className="text-blue-500 hover:underline ml-4">Signup</Link></li>
                     </ul>
                 </div>
                 <div id="about" className="container mx-auto px-4 py-8">
