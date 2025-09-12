@@ -97,11 +97,17 @@ export default function SideNavbar() {
           </div>
         ) : (
           <div className="flex flex-col gap-3">
-            <Link href="/">Dashboard</Link>
+            <Link href="/" className="hover:bg-sky-900 p-1 hover:rounded-sm">
+              Dashboard
+            </Link>
             <hr className="border-sky-700" />
             <span className="text-sky-300">My Courses:</span>
             {courses.map((course) => (
-              <Link key={course.id} href={`/course/${course.id}`}>
+              <Link
+                key={course.id}
+                href={`/course/${course.id}`}
+                className="hover:bg-sky-900 p-1 hover:rounded-sm"
+              >
                 {course.name}
               </Link>
             ))}
