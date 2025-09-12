@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Assignment from '../../../../components/Assignment';
-import { FaMagnifyingGlass } from 'react-icons/fa6';
+import SearchBar from '../../../../components/SearchBar';
 
 export default async function Grades({
   params,
@@ -13,14 +13,7 @@ export default async function Grades({
       <div className="w-full p-2 text-white bg-cyan-900 rounded-md text-2xl font-semibold">
         Grade: <span className="text-yellow-400">100% (A+)</span>
       </div>
-      <div className="relative w-full my-5">
-        <FaMagnifyingGlass className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-        <input
-          type="text"
-          placeholder="Search files or media..."
-          className="w-full border-2 border-slate-700 rounded-md pl-10 pr-3 py-2 outline-none"
-        />
-      </div>
+      <SearchBar placeholder={'Search for assignment...'} />
       <div>
         {Array.from({ length: 10 }).map((_, index) => (
           <Link
