@@ -12,8 +12,8 @@ export default function Assignment({
       {assignmentTitle}
       <div className="ml-auto flex">
         <div className="text-right">
-          <span className="text-lg font-semibold text-sky-600">{score}</span>/
-          {outOf}
+          <span className="text-lg font-semibold text-yellow-400">{score}</span>
+          /{outOf}
         </div>
       </div>
     </div>
