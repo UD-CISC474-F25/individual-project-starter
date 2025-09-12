@@ -13,7 +13,7 @@ export default function File({
         <span className="mr-2">{children}</span>
         <u>{text}</u>
       </p>
-      <p className="ml-auto hover:cursor-pointer">
+      <p className="ml-auto hover:cursor-pointer text-sky-700">
         <FaDownload />
       </p>
     </div>
