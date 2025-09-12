@@ -57,7 +57,7 @@ export default function Navbar() {
         {isMenuOpen ? <IoCloseSharp /> : <GiHamburgerMenu />}
       </div>
       {isMenuOpen && (
-        <div className="w-full border-b-3 border-sky-700 bg-sky-950 p-2 h-auto absolute top-14 right-0">
+        <div className="w-full z-10 border-b-3 border-sky-700 bg-sky-950 p-2 h-auto absolute top-14 right-0">
           {params.course_id ? (
             <div className="flex flex-col gap-3">
               <Link href="/" onClick={() => setIsMenuOpen(false)}>
