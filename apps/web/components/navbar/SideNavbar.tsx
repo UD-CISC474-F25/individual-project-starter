@@ -9,6 +9,8 @@ export default function SideNavbar() {
   const params = useParams();
   const course_id = params?.course_id as string | undefined;
 
+  // TODO - the navbar should also display a link back to the course page if the user is on a course subpage (e.g., /course/[course_id]/grades)
+
   const courses = [
     {
       id: '1234',
@@ -32,11 +34,13 @@ export default function SideNavbar() {
     },
   ].filter((course) => course.id !== course_id);
 
+  // TODO - add background color hover effect to links
+
   return (
     <div className="w-full h-screen p-2 text-white">
       <Link
         href="/123/profile"
-        className="flex items-center p-1.5 rounded-sm bg-cyan-900 hover:cursor-pointer"
+        className="flex items-center p-1.5 rounded-sm bg-cyan-900 border border-sky-500 hover:cursor-pointer"
       >
         <Image
           src={defaultUserPfp}
@@ -51,6 +55,7 @@ export default function SideNavbar() {
         {course_id ? (
           <div className="flex flex-col gap-3">
             <Link href="/">Dashboard</Link>
+            <Link href={`/course/${course_id}`}>Course Page</Link>
             <Link href={`/course/${course_id}/grades`}>Grades</Link>
             <Link href={`/course/${course_id}/assignments`}>Assignments</Link>
             <Link href={`/course/${course_id}/syllabus`}>Syllabus</Link>
