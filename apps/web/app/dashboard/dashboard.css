@@ -418,3 +418,22 @@
   background: var(--bg-tertiary);
   border-color: #e87300;
 }
+
+/* Placeholder Content */
+.placeholder-content {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.placeholder-content p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.placeholder-content p:last-child {
+  margin-bottom: 0;
+}

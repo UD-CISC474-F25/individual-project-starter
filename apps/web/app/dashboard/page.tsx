@@ -185,6 +185,37 @@ const StudentDashboard = () => {
             </section>
           )}
 
+          {/* Placeholder sections for other tabs */}
+          {activeTab === 'assignments' && (
+            <section className="assignments-section">
+              <h2>All Assignments</h2>
+              <div className="placeholder-content">
+                <p>📝 Assignment management interface will be implemented here.</p>
+                <p>Students will be able to view all assignments across courses, filter by status, and submit work.</p>
+              </div>
+            </section>
+          )}
+
+          {activeTab === 'schedule' && (
+            <section className="schedule-section">
+              <h2>My Sche
+                   dule</h2>
+              <div className="placeholder-content">
+                <p>📅 Calendar and schedule interface will be implemented here.</p>
+                <p>Students will see due dates, class times, and important deadlines.</p>
+              </div>
+            </section>
+          )}
+
+          {activeTab === 'announcements' && (
+            <section className="announcements-section">
+              <h2>Recent Announcements</h2>
+              <div className="placeholder-content">
+                <p>📢 Announcements feed will be implemented here.</p>
+                <p>Students will see important updates from all their courses.</p>
+              </div>
+            </section>
+          )}
         </div>
       </main>
     </div>
