@@ -117,7 +117,76 @@ const StudentDashboard = () => {
         </div>
       </header>
 
+      {/* Main Content */}
+      <main className="dashboard-main">
+        <div className="dashboard-content">
+          {/* Dashboard Header */}
+          <div className="dashboard-title">
+            <h1>Student Dashboard</h1>
+            <p>Welcome back! Here's an overview of your courses and assignments.</p>
+          </div>
 
+          {/* Courses Grid */}
+          {activeTab === 'courses' && (
+            <section className="courses-section">
+              <div className="section-header">
+                <h2>My Courses</h2>
+                <span className="course-count">{courses.length} enrolled</span>
+              </div>
+
+              <div className="courses-grid">
+                {courses.map(course => (
+                  <div key={course.id} className="course-card">
+                    <div className="course-header">
+                      <h3 className="course-name">{course.name}</h3>
+                      <span className="course-code">{course.code}</span>
+                    </div>
+                    
+                    <div className="course-info">
+                      <p className="instructor">👨‍🏫 {course.instructor}</p>
+                      
+                      <div className="progress-section">
+                        <div className="progress-header">
+                          <span>Progress</span>
+                          <span>{course.progress}%</span>
+                        </div>
+                        <div className="progress-bar">
+                          <div 
+                            className="progress-fill"
+                            style={{ width: `${course.progress}%` }}
+                          ></div>
+                        </div>
+                      </div>
+
+                      <div className="course-stats">
+                        <div className="stat-item">
+                          <span className="stat-number">{course.assignments}</span>
+                          <span className="stat-label">Assignments</span>
+                        </div>
+                        <div className="stat-item">
+                          <span className="stat-number">{course.announcements}</span>
+                          <span className="stat-label">Announcements</span>
+                        </div>
+                      </div>
+
+                      <div className="next-deadline">
+                        <span className="deadline-label">Next Deadline:</span>
+                        <span className="deadline-text">{course.nextDeadline}</span>
+                      </div>
+                    </div>
+
+                    <div className="course-actions">
+                      <button className="btn-view-course">View Course</button>
+                      <button className="btn-assignments">Assignments</button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+        </div>
+      </main>
     </div>
   )
 }
