@@ -13,7 +13,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/_components/ui/popover';
+  } from '@/_components/ui/popover';
 import { cn } from '@/lib/utils';
 
 // Simple logo component for the navbar
