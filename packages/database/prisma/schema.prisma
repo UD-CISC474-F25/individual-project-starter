@@ -12,9 +12,128 @@ generator client {
   output   = "../generated/client"
 }
 
-model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
+enum SubmissionType {
+  FILE
+  URL
+  TEXT
 }
+
+enum Role {
+  STUDENT
+  INSTRUCTOR
+  ADMIN
+  TA
+}
+
+model User {
+  id              String          @id @default(cuid())
+  email           String          @unique
+  password        String
+  fullName        String
+  profilePicture  String          @default("xxxx")
+  bio             String?
+  role            Role?
+  coursesTeaching Course[]        @relation("CourseProfessor") 
+  tasFor          Course[]        @relation("CourseTAs")       
+  enrolledCourses Course[]        @relation("CourseStudents")  
+  uploads         File[]          @relation("UserUploads")
+  submissions     Submission[]    @relation("SubmissionStudent")
+  grades          CourseGrade[]
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  Assignment      Assignment[]
+  Submission      Submission[]    @relation("SubmissionFeedbackPoster")
+  isAdmin         Boolean         @default(false)
+}
+
+model Course {
+  id            String         @id @default(cuid())
+  courseName    String
+  professorId   String?
+  professor     User?          @relation("CourseProfessor", fields: [professorId], references: [id])
+  tas           User[]         @relation("CourseTAs")
+  students      User[]         @relation("CourseStudents")
+  files         File[]
+  assignments   Assignment[]
+  studentGrades CourseGrade[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  Folder        Folder[]
+  Submission    Submission[]
+}
+
+model Folder {
+  id         String     @id @default(cuid())
+  courseID   String
+  course     Course     @relation(fields: [courseID], references: [id])
+  name       String
+  parentId   String?
+  parent     Folder?    @relation("FolderHierarchy", fields: [parentId], references: [id])
+  children   Folder[]   @relation("FolderHierarchy")
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  files      File[]
+}
+
+model File {
+  id          String     @id @default(cuid())
+  courseID    String?
+  course      Course?    @relation(fields: [courseID], references: [id])
+  folderID    String?
+  folder      Folder?    @relation(fields: [folderID], references: [id])
+  uploaderID  String
+  uploader    User       @relation("UserUploads", fields: [uploaderID], references: [id])
+  displayName String
+  path        String?
+  mimeType    String?
+  size        Int
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Assignment {
+  id                 String          @id @default(cuid())
+  title              String
+  description        String
+  dueDate            DateTime
+  courseID           String?
+  course             Course?         @relation(fields: [courseID], references: [id])
+  graderID           String?
+  grader             User?           @relation(fields: [graderID], references: [id])
+  totalPoints        Int             @default(1)
+  published          Boolean         @default(false)
+  submissionRequired Boolean         @default(true)
+  submissions        Submission[]
+  createdAt          DateTime        @default(now())
+  updatedAt          DateTime        @updatedAt
+}
+
+model Submission {
+  id                String           @id @default(cuid())
+  feedback          String?
+  feedbackPosterId  String?
+  feedbackPoster    User?            @relation("SubmissionFeedbackPoster", fields: [feedbackPosterId], references: [id])
+  submissionType    SubmissionType   @default(TEXT)
+  assignmentID      String?
+  assignment        Assignment?      @relation(fields: [assignmentID], references: [id])
+  courseID          String?
+  course            Course?          @relation(fields: [courseID], references: [id])
+  studentID         String?
+  student           User?            @relation("SubmissionStudent", fields: [studentID], references: [id])
+  pointsEarned      Int?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+}
+
+model CourseGrade {
+  id              String       @id @default(cuid())
+  courseID        String?
+  course          Course?      @relation(fields: [courseID], references: [id])
+  studentID       String?
+  student         User?        @relation(fields: [studentID], references: [id])
+  numericGrade    Int          @default(0)
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+}
+
+// I used ChatGPT to help me write the Prisma models based off of the MongoDB schemas I wrote because I have a much better understanding of MongoDB than I do of Prisma at the moment. You can view my MongoDB schemas that I wrote here as proof: https://hypernotepad.com/n/ffee74124382375c
