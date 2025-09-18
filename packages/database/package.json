@@ -18,7 +18,8 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@prisma/client": "latest"
+    "@prisma/client": "latest",
+    "@faker-js/faker": "^8.4.1"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
