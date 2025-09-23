@@ -1,5 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 datasource db {
   provider  = "postgresql"
@@ -16,13 +14,24 @@ enum SubmissionType {
   FILE
   URL
   TEXT
+  GOOGLE_DOC
 }
 
 enum Role {
-  STUDENT
+  STUDENT 
   INSTRUCTOR
   ADMIN
   TA
+}
+
+enum SubmissionStatus {
+  NOT_SUBMITTED
+  SUBMITTED 
+  GRADED
+  LATE
+  MISSING 
+  DRAFT
+  EXCUSED
 }
 
 model User {
@@ -33,24 +42,27 @@ model User {
   profilePicture  String          @default("xxxx")
   bio             String?
   role            Role?
-  coursesTeaching Course[]        @relation("CourseProfessor") 
-  tasFor          Course[]        @relation("CourseTAs")       
-  enrolledCourses Course[]        @relation("CourseStudents")  
+  coursesTeaching Course[]        @relation("CourseProfessor")
+  tasFor          Course[]        @relation("CourseTAs")
+  enrolledCourses Course[]        @relation("CourseStudents")
   uploads         File[]          @relation("UserUploads")
   submissions     Submission[]    @relation("SubmissionStudent")
   grades          CourseGrade[]
   createdAt       DateTime        @default(now())
   updatedAt       DateTime        @updatedAt
-  Assignment      Assignment[]
-  Submission      Submission[]    @relation("SubmissionFeedbackPoster")
+  assignment      Assignment[]
+  submission      Submission[]    @relation("SubmissionFeedbackPoster")
   isAdmin         Boolean         @default(false)
+
+  @@index([email])
+  @@index([role])
 }
 
 model Course {
   id            String         @id @default(cuid())
   courseName    String
   professorId   String?
-  professor     User?          @relation("CourseProfessor", fields: [professorId], references: [id])
+  professor     User?          @relation("CourseProfessor", fields: [professorId], references: [id], onDelete: Cascade)
   tas           User[]         @relation("CourseTAs")
   students      User[]         @relation("CourseStudents")
   files         File[]
@@ -58,82 +70,113 @@ model Course {
   studentGrades CourseGrade[]
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
-  Folder        Folder[]
-  Submission    Submission[]
+  folders       Folder[]
+  submissions   Submission[]
+
+  @@index([courseName])
+  @@index([professorId])
 }
 
 model Folder {
-  id         String     @id @default(cuid())
-  courseID   String
-  course     Course     @relation(fields: [courseID], references: [id])
-  name       String
-  parentId   String?
-  parent     Folder?    @relation("FolderHierarchy", fields: [parentId], references: [id])
-  children   Folder[]   @relation("FolderHierarchy")
-  createdAt  DateTime   @default(now())
-  updatedAt  DateTime   @updatedAt
-  files      File[]
+  id        String   @id @default(cuid())
+  courseID  String
+  course    Course   @relation(fields: [courseID], references: [id], onDelete: Cascade)
+  name      String
+  parentId  String?
+  parent    Folder?  @relation("FolderHierarchy", fields: [parentId], references: [id], onDelete: Cascade)
+  children  Folder[] @relation("FolderHierarchy")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  files     File[]
+
+  @@index([courseID])
+  @@index([parentId])
 }
 
 model File {
-  id          String     @id @default(cuid())
+  id          String   @id @default(cuid())
   courseID    String?
-  course      Course?    @relation(fields: [courseID], references: [id])
+  course      Course?  @relation(fields: [courseID], references: [id], onDelete: Cascade)
   folderID    String?
-  folder      Folder?    @relation(fields: [folderID], references: [id])
+  folder      Folder?  @relation(fields: [folderID], references: [id], onDelete: Cascade)
   uploaderID  String
-  uploader    User       @relation("UserUploads", fields: [uploaderID], references: [id])
+  uploader    User     @relation("UserUploads", fields: [uploaderID], references: [id], onDelete: Cascade)
   displayName String
   path        String?
   mimeType    String?
   size        Int
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([courseID])
+  @@index([folderID])
+  @@index([uploaderID])
 }
 
 model Assignment {
-  id                 String          @id @default(cuid())
+  id                 String       @id @default(cuid())
   title              String
   description        String
+  module             String?
   dueDate            DateTime
   courseID           String?
-  course             Course?         @relation(fields: [courseID], references: [id])
+  course             Course?      @relation(fields: [courseID], references: [id], onDelete: Cascade)
   graderID           String?
-  grader             User?           @relation(fields: [graderID], references: [id])
-  totalPoints        Int             @default(1)
-  published          Boolean         @default(false)
-  submissionRequired Boolean         @default(true)
+  grader             User?        @relation(fields: [graderID], references: [id], onDelete: Cascade)
+  totalPoints        Int          @default(1)
+  published          Boolean      @default(false)
+  submissionRequired Boolean      @default(true)
   submissions        Submission[]
-  createdAt          DateTime        @default(now())
-  updatedAt          DateTime        @updatedAt
+  createdAt          DateTime     @default(now())
+  updatedAt          DateTime     @updatedAt
+  allowEarlyECSubmissionIncentive Boolean @default(true)
+  extraCreditTotalPointsIncentive Float   @default(0.5)
+  revokedECSubmissionIncentive    Boolean @default(false)
+
+  @@index([courseID])
+  @@index([graderID])
+  @@index([module])
 }
 
 model Submission {
-  id                String           @id @default(cuid())
-  feedback          String?
-  feedbackPosterId  String?
-  feedbackPoster    User?            @relation("SubmissionFeedbackPoster", fields: [feedbackPosterId], references: [id])
-  submissionType    SubmissionType   @default(TEXT)
-  assignmentID      String?
-  assignment        Assignment?      @relation(fields: [assignmentID], references: [id])
-  courseID          String?
-  course            Course?          @relation(fields: [courseID], references: [id])
-  studentID         String?
-  student           User?            @relation("SubmissionStudent", fields: [studentID], references: [id])
-  pointsEarned      Int?
-  createdAt         DateTime         @default(now())
-  updatedAt         DateTime         @updatedAt
+  id               String         @id @default(cuid())
+  feedback         String?
+  feedbackPosterId String?
+  feedbackPoster   User?          @relation("SubmissionFeedbackPoster", fields: [feedbackPosterId], references: [id], onDelete: Cascade)
+  submissionType   SubmissionType @default(TEXT)
+  assignmentID     String?
+  assignment       Assignment?    @relation(fields: [assignmentID], references: [id], onDelete: Cascade)
+  courseID         String?
+  course           Course?        @relation(fields: [courseID], references: [id], onDelete: Cascade)
+  studentID        String?
+  student          User?          @relation("SubmissionStudent", fields: [studentID], references: [id], onDelete: Cascade)
+  pointsEarned     Int?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  draftContent             String?         
+  scheduledSubmitAt        DateTime?       
+  isScheduledSubmitEnabled Boolean          @default(false)
+  status                   SubmissionStatus @default(NOT_SUBMITTED)
+  type                    SubmissionType   @default(TEXT)
+
+  @@index([assignmentID])
+  @@index([courseID])
+  @@index([studentID])
 }
 
 model CourseGrade {
-  id              String       @id @default(cuid())
-  courseID        String?
-  course          Course?      @relation(fields: [courseID], references: [id])
-  studentID       String?
-  student         User?        @relation(fields: [studentID], references: [id])
-  numericGrade    Int          @default(0)
-  createdAt       DateTime     @default(now())
-  updatedAt       DateTime     @updatedAt
+  id           String   @id @default(cuid())
+  courseID     String?
+  course       Course?  @relation(fields: [courseID], references: [id], onDelete: Cascade)
+  studentID    String?
+  student      User?    @relation(fields: [studentID], references: [id], onDelete: Cascade)
+  numericGrade Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([courseID])
+  @@index([studentID])
 }
+
 
 // I used ChatGPT to help me write the Prisma models based off of the MongoDB schemas I wrote because I have a much better understanding of MongoDB than I do of Prisma at the moment. You can view my MongoDB schemas that I wrote here as proof: https://hypernotepad.com/n/ffee74124382375c
