@@ -3,9 +3,9 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
+  --button-primary-hover: hsl(0, 0%, 9%);
   --button-secondary-hover: #f2f2f2;
-
+  background-color: rgb(124, 4, 62);
   display: grid;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
@@ -14,6 +14,15 @@
   padding: 80px;
   gap: 64px;
   font-synthesis: none;
+
+}
+
+.roundedBorders{
+  margin-top: auto;
+    border: 2px solid #333; /* Optional: Add a border for visibility */
+      border-radius: 15px; /* Applies a 15px radius to all corners */
+      padding: 500px; /* Optional: Add padding for content spacing */
+      background-color: #f0f0f0; /* Optional: Background color */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -93,14 +102,14 @@ a.secondary {
 button.secondary {
   appearance: none;
   border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  font-family: var(--font-geist-sans);
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
+  height: 48px; 
+  padding: 0 20px; 
+  border: none; 
+  font-family: var(--font-geist-sans); 
+  border: 1px solid transparent; 
+  transition: background 0.2s, color 0.2s, border-color 0.2s; 
+  cursor: pointer; 
+  display: flex; 
   align-items: center;
   justify-content: center;
   font-size: 16px;
