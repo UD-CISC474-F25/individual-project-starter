@@ -1,0 +1,6 @@
+id,code,title,description,startDate,endDate,createdAt,updatedAt
+0cb6104b-b2ed-4beb-995c-bd3e25af3683,CISC275,Introduction to Software Engineering,"Software development lifecycle, design patterns, testing, and project management.",2025-05-04 22:50:57.452,2026-07-08 14:19:48.068,2025-09-18 17:12:17.086,2025-09-18 17:12:17.086
+4c4d62b2-58f0-45ca-96ff-f08529488583,CISC320,Introduction to Algorithms,Fundamental algorithms and data structures. Analysis of time and space complexity.,2025-02-11 02:45:10.329,2026-03-12 07:48:01.462,2025-09-18 17:12:16.828,2025-09-18 17:12:16.828
+8e489565-f739-4e85-b0f2-91892646870f,CISC474,Web Application Development,"Modern web development using React, Node.js, and databases. Covers full-stack development, APIs, and deployment.",2025-06-21 07:52:37.793,2026-03-27 01:28:57.641,2025-09-18 17:12:16.561,2025-09-18 17:12:16.561
+c17cd0a1-9e27-4750-8123-c91c584a1a8f,CISC220,Data Structures,"Advanced data structures including trees, graphs, and hash tables.",2025-02-01 23:00:32.904,2026-01-16 21:48:27.028,2025-09-18 17:12:17.604,2025-09-18 17:12:17.604
+f61f1233-dd8d-45fe-b539-c33e5e340f10,CISC181,Introduction to Computer Science II,"Object-oriented programming, data structures, and problem-solving techniques.",2025-07-30 17:00:29.981,2026-03-02 17:33:15.164,2025-09-18 17:12:17.356,2025-09-18 17:12:17.356

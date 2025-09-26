@@ -1,0 +1,191 @@
+id,assignmentId,title,prompt,starterCode,language,maxScore,createdAt,updatedAt
+0572c43a-153a-4a35-b203-fa7657f1f1cb,16f7052e-1828-4921-9571-6ea2c20dbeb4,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",C,150,2025-09-18 17:13:01.487,2025-09-18 17:13:01.487
+0581dd4a-0766-4702-9722-81de8ac37260,3557e1d6-e568-4472-bf54-d69ab0ffa618,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",TYPESCRIPT,100,2025-09-18 17:13:03.096,2025-09-18 17:13:03.096
+067b3217-8633-43a3-8b6e-ed13881071d7,961c935c-b183-4660-beb3-0a38a313a0ae,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",C,75,2025-09-18 17:13:02.031,2025-09-18 17:13:02.031
+0760ab0a-dad2-42aa-82cb-e7c56d7336f2,d8e76cd2-c9df-4fa2-ba59-bd9708ffda37,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",TYPESCRIPT,150,2025-09-18 17:13:08.454,2025-09-18 17:13:08.454
+1061dfc4-57ef-49d2-9013-cdbc516db951,c450a362-ca23-42d9-be05-dc2c01cf3c1d,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","function isValid(s) {
+    // Your code here
+}",JAVASCRIPT,75,2025-09-18 17:13:09.798,2025-09-18 17:13:09.798
+1543d412-dc5a-4925-8cba-f814cd094a93,b6c685e5-2b83-4554-a3bc-03f799e73c37,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","public List<Integer> inorderTraversal(TreeNode root) {
+    // Your code here
+    return new ArrayList<>();
+}",JAVA,75,2025-09-18 17:12:56.544,2025-09-18 17:12:56.544
+163d2322-03e1-49af-8834-9023652fa2aa,37d39ea9-ec3f-4c72-8d90-85e1f8587c3d,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,75,2025-09-18 17:13:04.983,2025-09-18 17:13:04.983
+1d837fbc-398d-4a6d-a9ca-30b05c5cc64d,c450a362-ca23-42d9-be05-dc2c01cf3c1d,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",TYPESCRIPT,150,2025-09-18 17:13:09.264,2025-09-18 17:13:09.264
+1e055426-e6f8-4458-8235-9d1adc534d1d,d8e76cd2-c9df-4fa2-ba59-bd9708ffda37,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",CPP,125,2025-09-18 17:13:08.996,2025-09-18 17:13:08.996
+208a381e-db3e-458e-a082-53ec0f87488a,3ff659ee-fe60-448d-b80c-a790f0a5db44,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",PYTHON,100,2025-09-18 17:13:10.831,2025-09-18 17:13:10.831
+213e641c-6fb5-4a1d-9738-42d9a07baee5,37d39ea9-ec3f-4c72-8d90-85e1f8587c3d,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","public boolean isValid(String s) {
+    // Your code here
+    return false;
+}",JAVA,125,2025-09-18 17:13:05.793,2025-09-18 17:13:05.793
+21883c08-f281-4747-8e08-699e76b7e6d5,98796371-d50b-4f0c-8194-95a0b6cdab24,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,150,2025-09-18 17:13:06.604,2025-09-18 17:13:06.604
+222bef8f-0b26-421f-9291-574400a7d9ea,994d92fa-1432-4582-9914-e62c2ef187fe,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",PYTHON,100,2025-09-18 17:13:07.91,2025-09-18 17:13:07.91
+3df99d4c-800e-486a-93c8-3451c5fec47a,37d39ea9-ec3f-4c72-8d90-85e1f8587c3d,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",PYTHON,150,2025-09-18 17:13:05.271,2025-09-18 17:13:05.271
+3faed6b3-0d5a-4981-b105-6aa0e09d538a,3557e1d6-e568-4472-bf54-d69ab0ffa618,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","function twoSum(nums, target) {
+    // Your code here
+}",JAVASCRIPT,125,2025-09-18 17:13:03.359,2025-09-18 17:13:03.359
+41fdefa4-6590-4652-b9b9-5e6cb2e6d27a,e333f5a0-4367-4426-8a8c-a86ae3221d68,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",C,100,2025-09-18 17:13:03.875,2025-09-18 17:13:03.875
+425e1433-5d12-4a76-8347-846bbe62833d,3557e1d6-e568-4472-bf54-d69ab0ffa618,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",PYTHON,125,2025-09-18 17:13:03.619,2025-09-18 17:13:03.619
+458c7f95-8a34-49d5-b047-b628b340d8ce,7781e52f-30a6-4c5e-a60d-0a9b558e2973,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","public boolean isValid(String s) {
+    // Your code here
+    return false;
+}",JAVA,150,2025-09-18 17:13:02.555,2025-09-18 17:13:02.555
+47841d16-cd9f-4ab0-9f5e-a053ffcb0487,d8e76cd2-c9df-4fa2-ba59-bd9708ffda37,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",PYTHON,150,2025-09-18 17:13:08.728,2025-09-18 17:13:08.728
+492258b1-2cee-4a6e-99a0-160f0f3855e0,9a750f17-b405-4777-a099-e56f2f28b1b5,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","public int[] twoSum(int[] nums, int target) {
+    // Your code here
+    return new int[0];
+}",JAVA,100,2025-09-18 17:13:00.178,2025-09-18 17:13:00.178
+4c5b6375-87dc-4811-ac12-7d4752a080b4,98796371-d50b-4f0c-8194-95a0b6cdab24,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",PYTHON,125,2025-09-18 17:13:06.054,2025-09-18 17:13:06.054
+4e989d16-0a20-4116-9f5d-c25eaaf327e2,9a750f17-b405-4777-a099-e56f2f28b1b5,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",PYTHON,125,2025-09-18 17:12:59.908,2025-09-18 17:12:59.908
+5df72255-37f7-4919-b4ee-efd821e8958b,4df91091-8fef-4de7-94cf-138866f44a70,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",C,150,2025-09-18 17:12:58.795,2025-09-18 17:12:58.795
+5f5502f2-e1fe-4a44-9dc6-14519cbf6f5d,7781e52f-30a6-4c5e-a60d-0a9b558e2973,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",C,150,2025-09-18 17:13:02.832,2025-09-18 17:13:02.832
+6dde01b9-52ad-4e8c-88dc-eccc4390274b,649ddb34-f60c-4e83-ae29-3f42fdf92afc,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",TYPESCRIPT,150,2025-09-18 17:12:57.765,2025-09-18 17:12:57.765
+7009a7a4-5386-4a88-bd5a-ebdfeb488ce3,994d92fa-1432-4582-9914-e62c2ef187fe,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","public int[] twoSum(int[] nums, int target) {
+    // Your code here
+    return new int[0];
+}",JAVA,125,2025-09-18 17:13:07.65,2025-09-18 17:13:07.65
+74b5eb84-bffc-4f4a-b224-258d8deb67dc,961c935c-b183-4660-beb3-0a38a313a0ae,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",C,75,2025-09-18 17:13:01.767,2025-09-18 17:13:01.767
+74dcbeb9-636b-40dd-b7b7-43262c2a5949,455ed20d-f5a1-4b13-bad2-7492364b6406,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",C,100,2025-09-18 17:13:07.389,2025-09-18 17:13:07.389
+76599101-ae4f-4535-ad83-7c0fe10f130b,e333f5a0-4367-4426-8a8c-a86ae3221d68,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",C,150,2025-09-18 17:13:04.411,2025-09-18 17:13:04.411
+7f2d70bd-0e7e-43fe-8583-25206cd098d4,455ed20d-f5a1-4b13-bad2-7492364b6406,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",C,150,2025-09-18 17:13:06.878,2025-09-18 17:13:06.878
+7fdf5a2f-5b96-47d6-bfb2-5c2e87a1f598,d4d2f2d4-ca5c-4184-a327-d4f3ef2905f5,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","function twoSum(nums, target) {
+    // Your code here
+}",JAVASCRIPT,75,2025-09-18 17:12:59.646,2025-09-18 17:12:59.646
+82559bb9-ad22-4b2d-b4e9-874b657c2f0b,3ff659ee-fe60-448d-b80c-a790f0a5db44,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,100,2025-09-18 17:13:10.055,2025-09-18 17:13:10.055
+82e3a1da-332b-475f-952b-3e1bfbed96d9,e333f5a0-4367-4426-8a8c-a86ae3221d68,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","#include <vector>
+using namespace std;
+
+vector<int> twoSum(vector<int>& nums, int target) {
+    // Your code here
+    return {};
+}",CPP,150,2025-09-18 17:13:04.693,2025-09-18 17:13:04.693
+8627b842-e436-4f1e-ad00-8e6c7c4434c9,d4d2f2d4-ca5c-4184-a327-d4f3ef2905f5,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",TYPESCRIPT,75,2025-09-18 17:12:59.378,2025-09-18 17:12:59.378
+8b303556-cb62-48ce-9a84-6653c19275c8,b6c685e5-2b83-4554-a3bc-03f799e73c37,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","function isValid(s) {
+    // Your code here
+}",JAVASCRIPT,100,2025-09-18 17:12:57.487,2025-09-18 17:12:57.487
+8fa9b446-07c0-4c22-90cf-37c7b6f830c3,90bdaf0f-90b5-4a6a-8fbe-a9f53fdaa6e3,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","public int[] twoSum(int[] nums, int target) {
+    // Your code here
+    return new int[0];
+}",JAVA,75,2025-09-18 17:13:00.443,2025-09-18 17:13:00.443
+9674c61f-6c68-49c1-bc96-bd053fdbac9e,4df91091-8fef-4de7-94cf-138866f44a70,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,150,2025-09-18 17:12:59.049,2025-09-18 17:12:59.049
+9cd5246b-09d6-44c5-a7ba-ccb4e71c2992,3ff659ee-fe60-448d-b80c-a790f0a5db44,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,75,2025-09-18 17:13:10.317,2025-09-18 17:13:10.317
+a0891cb2-9f58-493d-a4c4-d413ba740fc3,90bdaf0f-90b5-4a6a-8fbe-a9f53fdaa6e3,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",PYTHON,150,2025-09-18 17:13:00.962,2025-09-18 17:13:00.962
+a19d3aef-f84b-4b47-845e-49a8a1a3b379,7781e52f-30a6-4c5e-a60d-0a9b558e2973,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","public boolean isValid(String s) {
+    // Your code here
+    return false;
+}",JAVA,100,2025-09-18 17:13:02.296,2025-09-18 17:13:02.296
+a297ee83-7689-4c72-a337-4d5d98ebd83b,b318906e-9be2-474e-8fd0-ed5699873db0,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",CPP,125,2025-09-18 17:13:11.342,2025-09-18 17:13:11.342
+a2b0b410-8a13-494e-a527-f4d350513be5,37d39ea9-ec3f-4c72-8d90-85e1f8587c3d,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",C,125,2025-09-18 17:13:05.535,2025-09-18 17:13:05.535
+b1c81e34-3127-4bfa-8051-4f6c15b7f64a,b6c685e5-2b83-4554-a3bc-03f799e73c37,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","def twoSum(nums, target):
+    # Your code here
+    pass",PYTHON,75,2025-09-18 17:12:57.208,2025-09-18 17:12:57.208
+b3c0e8aa-ab47-4778-a1ee-cc915f606b65,649ddb34-f60c-4e83-ae29-3f42fdf92afc,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","public int[] twoSum(int[] nums, int target) {
+    // Your code here
+    return new int[0];
+}",JAVA,125,2025-09-18 17:12:58.266,2025-09-18 17:12:58.266
+b40d3f97-8db8-4082-9e24-2ef566dc1a57,994d92fa-1432-4582-9914-e62c2ef187fe,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",TYPESCRIPT,150,2025-09-18 17:13:08.181,2025-09-18 17:13:08.181
+b664c08f-f336-48ce-8b24-2de40e116ab7,16f7052e-1828-4921-9571-6ea2c20dbeb4,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","function twoSum(nums, target) {
+    // Your code here
+}",JAVASCRIPT,100,2025-09-18 17:13:01.222,2025-09-18 17:13:01.222
+bb340a40-b31f-4e2b-b20e-42c5fcb02cce,b6c685e5-2b83-4554-a3bc-03f799e73c37,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,150,2025-09-18 17:12:56.824,2025-09-18 17:12:56.824
+c82f4d35-7c53-4935-a43a-fa59bbd7cd1d,90bdaf0f-90b5-4a6a-8fbe-a9f53fdaa6e3,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","public boolean isValid(String s) {
+    // Your code here
+    return false;
+}",JAVA,75,2025-09-18 17:13:00.7,2025-09-18 17:13:00.7
+d6b67eb1-1060-47be-9632-8a6c46f88179,98796371-d50b-4f0c-8194-95a0b6cdab24,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","function isValid(s) {
+    // Your code here
+}",JAVASCRIPT,100,2025-09-18 17:13:06.334,2025-09-18 17:13:06.334
+d7c09961-9dc8-499b-86fa-35d8d161a002,c450a362-ca23-42d9-be05-dc2c01cf3c1d,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","#include <vector>
+using namespace std;
+
+vector<int> twoSum(vector<int>& nums, int target) {
+    // Your code here
+    return {};
+}",CPP,100,2025-09-18 17:13:09.525,2025-09-18 17:13:09.525
+dced9d12-b163-4236-9637-1b09659d12b2,649ddb34-f60c-4e83-ae29-3f42fdf92afc,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","public boolean isValid(String s) {
+    // Your code here
+    return false;
+}",JAVA,125,2025-09-18 17:12:58.021,2025-09-18 17:12:58.021
+e0fdc287-f8e1-4a9e-b470-d785e6545247,3ff659ee-fe60-448d-b80c-a790f0a5db44,Two Sum,"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice.","#include <vector>
+using namespace std;
+
+vector<int> twoSum(vector<int>& nums, int target) {
+    // Your code here
+    return {};
+}",CPP,75,2025-09-18 17:13:10.573,2025-09-18 17:13:10.573
+e0ff4843-d727-41c4-9f58-a02986868290,b318906e-9be2-474e-8fd0-ed5699873db0,Valid Parentheses,"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: 1) Open brackets must be closed by the same type of brackets. 2) Open brackets must be closed in the correct order.","def isValid(s):
+    # Your code here
+    pass",TYPESCRIPT,150,2025-09-18 17:13:11.077,2025-09-18 17:13:11.077
+e36c7a59-990b-4f2f-be2c-4a0435f42b34,e333f5a0-4367-4426-8a8c-a86ae3221d68,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,125,2025-09-18 17:13:04.13,2025-09-18 17:13:04.13
+ef0d036c-5f16-4eeb-80b0-f760d2767b0d,4df91091-8fef-4de7-94cf-138866f44a70,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","function inorderTraversal(root) {
+    // Your code here
+}",JAVASCRIPT,150,2025-09-18 17:12:58.535,2025-09-18 17:12:58.535
+f7562a6b-50e0-4e3f-9443-ddb25d6be578,455ed20d-f5a1-4b13-bad2-7492364b6406,Binary Tree Inorder Traversal,"Given the root of a binary tree, return the inorder traversal of its nodes' values.","def inorderTraversal(root):
+    # Your code here
+    pass",PYTHON,75,2025-09-18 17:13:07.133,2025-09-18 17:13:07.133

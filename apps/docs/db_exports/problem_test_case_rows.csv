@@ -1,0 +1,255 @@
+id,problemId,input,expectedOutput,hidden,points
+01d91f99-04ee-4a49-86b1-ee8e1b21d4d0,0572c43a-153a-4a35-b203-fa7657f1f1cb,(),true,true,22
+023ab1ef-1795-4aae-8e3f-fa8a17fcdd78,f7562a6b-50e0-4e3f-9443-ddb25d6be578,"[1,2,3,4,5]",false,true,20
+025d05c0-f38e-4dcb-acaf-9f6b52b7eebf,ef0d036c-5f16-4eeb-80b0-f760d2767b0d,"nums = [3,3], target = 6",false,true,16
+03973a68-30b3-44c9-a304-c222208304ef,0581dd4a-0766-4702-9722-81de8ac37260,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2,3,4,5]",false,11
+040ab658-1511-4342-9300-0b4b31e760f0,1061dfc4-57ef-49d2-9013-cdbc516db951,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",false,22
+0421fe40-a29d-4c8f-9e05-1bd645b8e79f,f7562a6b-50e0-4e3f-9443-ddb25d6be578,(],6,false,23
+045f02d0-b5b4-47d5-b442-8a78e9297e63,d6b67eb1-1060-47be-9632-8a6c46f88179,"[1,2,3,4,5]","[0,1]",true,20
+05c5edf1-60c8-46f3-9ba9-c551105a64a8,21883c08-f281-4747-8e08-699e76b7e6d5,(),6,true,20
+06c1dbd7-577a-4efe-ad23-f19c570ffbe8,3df99d4c-800e-486a-93c8-3451c5fec47a,"[2,7,11,15], 9","[0,1]",false,23
+06c87b92-b21e-40c2-9a65-e36b0bc5d405,c82f4d35-7c53-4935-a43a-fa59bbd7cd1d,(),true,false,14
+079b6b25-bebd-4483-8bf8-49918325f3e1,82559bb9-ad22-4b2d-b4e9-874b657c2f0b,"[2,7,11,15], 9",false,true,13
+07e9d27b-b3a6-4257-8cc6-714d24d53c71,1e055426-e6f8-4458-8235-9d1adc534d1d,"[-2,1,-3,4,-1,2,1,-5,4]",6,false,23
+08154313-f75f-493d-9534-055a2a1e6b20,1d837fbc-398d-4a6d-a9ca-30b05c5cc64d,(),"[1,2,3,4,5]",true,19
+089ec28e-c8bf-4bed-b9ea-36fd27d62f21,a19d3aef-f84b-4b47-845e-49a8a1a3b379,(],"[1,2,3,4,5]",true,11
+0cfbdd80-7b08-4437-89f4-1283d4ed12d9,b3c0e8aa-ab47-4778-a1ee-cc915f606b65,"nums = [3,2,4], target = 6",false,true,12
+0d098148-90e8-430b-b0ad-c5c83fa26ace,47841d16-cd9f-4ab0-9f5e-a053ffcb0487,"[2,7,11,15], 9",false,false,23
+0e9866dd-ca0e-49db-a9df-e966cb722cca,4c5b6375-87dc-4811-ac12-7d4752a080b4,"nums = [3,2,4], target = 6",true,true,14
+0f01c79e-5c76-4d83-9d71-0de4207026bf,458c7f95-8a34-49d5-b047-b628b340d8ce,(),true,true,11
+0f7fcd6d-5f38-49a5-ac9d-70266471c228,a2b0b410-8a13-494e-a527-f4d350513be5,"nums = [3,3], target = 6",false,false,17
+0fbb37b9-0e0f-46f7-9d1b-c11cfec96351,5f5502f2-e1fe-4a44-9dc6-14519cbf6f5d,(],"[0,1]",false,22
+116b358c-fcde-4672-b8ee-8b899797ef5a,b664c08f-f336-48ce-8b24-2de40e116ab7,(),6,true,13
+14525f2d-adb4-4552-82e9-6e68ea177cbb,163d2322-03e1-49af-8834-9023652fa2aa,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",true,25
+14599841-c145-450d-ab2e-fac14a99cbba,b40d3f97-8db8-4082-9e24-2ef566dc1a57,"[2,7,11,15], 9","[1,2,3,4,5]",true,14
+14641a24-fe51-474b-87e1-4c7eac1dac5f,b1c81e34-3127-4bfa-8051-4f6c15b7f64a,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",false,18
+160619ea-0dd3-48d4-8c0f-7cecbdf82b30,067b3217-8633-43a3-8b6e-ed13881071d7,"nums = [3,2,4], target = 6","[1,2,3,4,5]",false,20
+16a394c9-e474-43ae-aaa9-1c87be620488,e36c7a59-990b-4f2f-be2c-4a0435f42b34,(),"[1,2]",false,20
+1722254e-b10e-4154-b596-aba130e19a47,1061dfc4-57ef-49d2-9013-cdbc516db951,(),"[0,1]",true,20
+189e87a3-c19b-40d4-825b-d92573280448,a19d3aef-f84b-4b47-845e-49a8a1a3b379,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",true,21
+19cf7285-39dc-46d6-be10-803c3f848bfe,ef0d036c-5f16-4eeb-80b0-f760d2767b0d,"nums = [3,2,4], target = 6","[1,2,3,4,5]",false,15
+1a4ac5aa-a86d-4f83-b91f-f15887115306,a2b0b410-8a13-494e-a527-f4d350513be5,(],true,true,11
+1b4ff2f2-c1e7-4b67-b091-f29ea7dd3d37,213e641c-6fb5-4a1d-9738-42d9a07baee5,"nums = [3,2,4], target = 6","[0,1]",false,19
+1c99f9b2-fb8e-4067-b1f2-866bf404854b,5df72255-37f7-4919-b4ee-efd821e8958b,()[]{},"[0,1]",false,11
+1c9c5603-5b78-4351-a9ea-a18e6b4db269,d6b67eb1-1060-47be-9632-8a6c46f88179,"[1,2,3,4,5]","[0,1]",false,24
+1ec0729c-c0bb-4cf5-8252-30c3a16b4b34,e0ff4843-d727-41c4-9f58-a02986868290,"nums = [3,2,4], target = 6",true,false,10
+22b5595b-c086-4e90-9ea2-e972f516ca66,492258b1-2cee-4a6e-99a0-160f0f3855e0,(),6,true,17
+22b5f483-847c-433d-a123-a82f4ba37e9b,a0891cb2-9f58-493d-a4c4-d413ba740fc3,"nums = [3,3], target = 6",true,false,10
+22ec25dd-0515-4d02-9caf-a5c00504a2c5,e36c7a59-990b-4f2f-be2c-4a0435f42b34,"[2,7,11,15], 9",6,true,19
+23cba4f9-6248-42f3-9156-a594cc87840f,7fdf5a2f-5b96-47d6-bfb2-5c2e87a1f598,"nums = [3,2,4], target = 6",6,false,13
+2685943d-0272-4047-94ae-66c5914382db,1543d412-dc5a-4925-8cba-f814cd094a93,(),true,true,17
+2734c3f6-fd83-4650-84b7-785f20716176,213e641c-6fb5-4a1d-9738-42d9a07baee5,"nums = [3,3], target = 6","[0,1]",false,16
+27fe2b3d-11d7-4d75-adeb-0ad5e78ef600,76599101-ae4f-4535-ad83-7c0fe10f130b,"[-2,1,-3,4,-1,2,1,-5,4]",false,true,24
+284c9d26-c8d1-40e1-a829-c0ebf7b83cd6,0581dd4a-0766-4702-9722-81de8ac37260,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2,3,4,5]",true,14
+2908298d-b218-4cbb-a3d1-ed2fcba079e2,163d2322-03e1-49af-8834-9023652fa2aa,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",true,22
+290ec135-3c94-4228-8f67-ba2866e37a6c,e0ff4843-d727-41c4-9f58-a02986868290,(],false,true,14
+2a88aae6-da13-43c5-9728-826797739c84,d7c09961-9dc8-499b-86fa-35d8d161a002,"[1,2,3,4,5]","[1,2]",true,23
+2b33a5ee-796d-4619-8001-5d3dd7c8da6f,74dcbeb9-636b-40dd-b7b7-43262c2a5949,"[1,2,3,4,5]","[1,2,3,4,5]",true,12
+2c39b142-e8cc-41dd-9294-0bbdd2643296,b40d3f97-8db8-4082-9e24-2ef566dc1a57,"nums = [3,2,4], target = 6",6,true,16
+2d0c0590-1459-43de-9084-5d36b7e9bffe,b3c0e8aa-ab47-4778-a1ee-cc915f606b65,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",false,22
+2d18cb7f-df61-4ba9-8bc8-1c192a146227,e0ff4843-d727-41c4-9f58-a02986868290,"nums = [3,3], target = 6",true,false,18
+312e6698-3956-4309-8a40-7005b9d34fb5,74dcbeb9-636b-40dd-b7b7-43262c2a5949,"[1,2,3,4,5]","[0,1]",false,15
+317f8e45-b563-4ba9-bf3b-25f5857e5569,8fa9b446-07c0-4c22-90cf-37c7b6f830c3,(),"[1,2]",true,25
+3236c7cf-39fa-4054-b468-69ba01d26d6e,b3c0e8aa-ab47-4778-a1ee-cc915f606b65,"[1,2,3,4,5]",false,true,22
+32db1cdf-74b8-4b7d-be42-5a405080b8e0,e0fdc287-f8e1-4a9e-b470-d785e6545247,"[2,7,11,15], 9",true,true,17
+365d65bd-f6e1-4ecb-b171-581fc765a8dc,76599101-ae4f-4535-ad83-7c0fe10f130b,"[-2,1,-3,4,-1,2,1,-5,4]",6,false,24
+36ceb79c-6ca9-44fd-ad79-a8536d5270b0,b40d3f97-8db8-4082-9e24-2ef566dc1a57,(],"[0,1]",true,22
+37545fa0-3a1b-4949-b697-ad87c55b21a1,8fa9b446-07c0-4c22-90cf-37c7b6f830c3,(),"[1,2,3,4,5]",true,21
+38afd14c-d3a6-467e-bb45-c0279cddd90a,f7562a6b-50e0-4e3f-9443-ddb25d6be578,"[1,2,3,4,5]",false,true,17
+39147a69-61d5-4fc1-89eb-c835997a26ad,213e641c-6fb5-4a1d-9738-42d9a07baee5,(),true,true,22
+39942a4e-9979-4f91-8667-a3b99ff01a31,c82f4d35-7c53-4935-a43a-fa59bbd7cd1d,"[2,7,11,15], 9",true,true,16
+39dca926-8a23-4e60-a74f-d8c1a04383d6,74b5eb84-bffc-4f4a-b224-258d8deb67dc,"[-2,1,-3,4,-1,2,1,-5,4]",false,false,14
+3da76838-3ac9-4d7c-83db-0716faecf5b9,8fa9b446-07c0-4c22-90cf-37c7b6f830c3,"[2,7,11,15], 9","[0,1]",true,23
+3e5064c8-fca0-4f8a-a8b7-21093efdbd7f,1543d412-dc5a-4925-8cba-f814cd094a93,"[1,2,3,4,5]",false,false,24
+3f1da470-dec7-472c-9eb6-47ff536c8254,ef0d036c-5f16-4eeb-80b0-f760d2767b0d,(),"[1,2,3,4,5]",true,20
+3fd164ec-a84c-48b5-9003-54f2df9e1950,4c5b6375-87dc-4811-ac12-7d4752a080b4,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",false,12
+403320ef-665f-4972-932f-eec5f948abc3,5f5502f2-e1fe-4a44-9dc6-14519cbf6f5d,(],false,false,22
+4202d51e-3071-4646-896b-85725368fb77,1061dfc4-57ef-49d2-9013-cdbc516db951,"nums = [3,2,4], target = 6","[1,2]",true,25
+42564d4d-dff4-47f8-af74-8497b8135d33,47841d16-cd9f-4ab0-9f5e-a053ffcb0487,()[]{},"[1,2]",true,23
+425da551-169c-4e37-9339-5ba0eafe8372,0581dd4a-0766-4702-9722-81de8ac37260,"[2,7,11,15], 9",true,true,22
+42d6f62c-fe54-43f9-9db1-c24f1757d95d,9cd5246b-09d6-44c5-a7ba-ccb4e71c2992,"[2,7,11,15], 9",true,false,24
+43745bf3-15fd-4c29-b9dd-97ca5cd4d4a7,e36c7a59-990b-4f2f-be2c-4a0435f42b34,"nums = [3,3], target = 6",true,true,23
+43af5a62-5b26-4fe2-baef-f60688bc5374,7f2d70bd-0e7e-43fe-8583-25206cd098d4,(],true,false,17
+44072728-f72c-47c6-a573-8064c2b51061,21883c08-f281-4747-8e08-699e76b7e6d5,(],true,true,18
+44d4c129-0cd7-4d8a-ac1e-834c50ccf26a,a297ee83-7689-4c72-a337-4d5d98ebd83b,(),false,false,17
+45fc6a3b-a342-44e9-922a-493127a94c7e,21883c08-f281-4747-8e08-699e76b7e6d5,"[1,2,3,4,5]","[1,2,3,4,5]",false,15
+47df6c33-ae35-4683-97bc-c344f8498463,7fdf5a2f-5b96-47d6-bfb2-5c2e87a1f598,()[]{},"[1,2,3,4,5]",false,24
+48a0d7f3-c9ab-4b57-a05a-10a6a67bf243,41fdefa4-6590-4652-b9b9-5e6cb2e6d27a,(),"[0,1]",false,25
+48cc8dd5-0a69-44e3-bb99-10a079455ea1,222bef8f-0b26-421f-9291-574400a7d9ea,"[1,2,3,4,5]",false,true,23
+49b44831-fc14-4352-af6b-32a8819b573d,5df72255-37f7-4919-b4ee-efd821e8958b,(),"[1,2]",true,21
+4a36535c-e1b9-4567-ad78-fa5175624401,8fa9b446-07c0-4c22-90cf-37c7b6f830c3,"[1,2,3,4,5]",false,false,13
+4b606c31-2860-4c41-ae7f-628c06ff6ab4,a19d3aef-f84b-4b47-845e-49a8a1a3b379,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2,3,4,5]",false,25
+4beb9631-74b2-4bbb-afc5-841a9577bc1d,c82f4d35-7c53-4935-a43a-fa59bbd7cd1d,"[2,7,11,15], 9",true,true,16
+4d021542-2dc0-4802-8db6-94af1d44e756,41fdefa4-6590-4652-b9b9-5e6cb2e6d27a,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",false,16
+4d612a19-1584-49db-9866-b5c05cd6cd73,222bef8f-0b26-421f-9291-574400a7d9ea,"[-2,1,-3,4,-1,2,1,-5,4]",true,true,24
+4de03c07-6d91-43a8-90a2-f4186aa5f56f,9cd5246b-09d6-44c5-a7ba-ccb4e71c2992,"nums = [3,2,4], target = 6","[0,1]",false,24
+4eb25c59-9262-4d5f-b02c-8b9729f3be8c,4c5b6375-87dc-4811-ac12-7d4752a080b4,(),"[0,1]",true,18
+4f4aa6a2-1cb2-4ced-83be-d232abce45ea,bb340a40-b31f-4e2b-b20e-42c5fcb02cce,()[]{},true,true,11
+4f664a93-848d-4174-836d-d714a8ae191e,067b3217-8633-43a3-8b6e-ed13881071d7,"nums = [3,2,4], target = 6","[1,2,3,4,5]",true,17
+5093fe04-1072-48aa-b3a3-9239a87a325d,425e1433-5d12-4a76-8347-846bbe62833d,()[]{},true,false,22
+52d85e28-6367-47df-93f1-639f51c1299f,425e1433-5d12-4a76-8347-846bbe62833d,"nums = [3,3], target = 6",true,false,15
+547ee246-03fa-46e0-ad54-e4eb31c21285,425e1433-5d12-4a76-8347-846bbe62833d,"[1,2,3,4,5]",false,true,19
+56100b09-23a5-48ab-b4aa-2892575abf63,1543d412-dc5a-4925-8cba-f814cd094a93,"[1,2,3,4,5]","[0,1]",false,23
+58f5e656-e071-4ead-8a84-877a2c41389a,e0fdc287-f8e1-4a9e-b470-d785e6545247,"[-2,1,-3,4,-1,2,1,-5,4]",true,false,19
+5a341bd9-b8a0-4eb6-b889-d2ebb0f7aa1b,7fdf5a2f-5b96-47d6-bfb2-5c2e87a1f598,()[]{},6,true,16
+5b2ef8f5-72cf-4208-9f0a-786ec2e13f49,1543d412-dc5a-4925-8cba-f814cd094a93,(),"[1,2,3,4,5]",true,18
+5caaa8f5-e711-402f-b253-37ccc649f36e,9cd5246b-09d6-44c5-a7ba-ccb4e71c2992,"nums = [3,3], target = 6",true,true,17
+5d8d9efa-1dc3-412c-ad3b-a861986d8153,bb340a40-b31f-4e2b-b20e-42c5fcb02cce,"nums = [3,2,4], target = 6",6,false,21
+5de82c39-6231-4fe0-8141-47bf6eb591af,ef0d036c-5f16-4eeb-80b0-f760d2767b0d,(),false,true,19
+5de978a4-70ea-462b-a2e6-f095268cd724,067b3217-8633-43a3-8b6e-ed13881071d7,"[-2,1,-3,4,-1,2,1,-5,4]",true,true,14
+5e401ee4-8a9b-4df5-93a4-d63d75a43dbd,1d837fbc-398d-4a6d-a9ca-30b05c5cc64d,"nums = [3,2,4], target = 6",false,true,20
+5e454a53-a61b-4c3d-a913-fb34bb57548a,a0891cb2-9f58-493d-a4c4-d413ba740fc3,"[2,7,11,15], 9","[1,2,3,4,5]",true,25
+5f024c8c-5a52-49d0-9406-098b54f2b981,492258b1-2cee-4a6e-99a0-160f0f3855e0,"[2,7,11,15], 9",6,false,11
+60b94004-aba7-46d9-a3fd-4917f1464d7f,4e989d16-0a20-4116-9f5d-c25eaaf327e2,"nums = [3,3], target = 6",true,false,11
+6141908e-0e1a-4594-8833-951964fde6db,163d2322-03e1-49af-8834-9023652fa2aa,"nums = [3,2,4], target = 6",true,true,23
+640443bb-8305-4c96-8d27-96caa68a0b65,1d837fbc-398d-4a6d-a9ca-30b05c5cc64d,"[1,2,3,4,5]",false,true,11
+644b8d81-97f6-4a05-9c36-0fa92487f244,5f5502f2-e1fe-4a44-9dc6-14519cbf6f5d,()[]{},"[0,1]",true,15
+69ca6912-aedd-4cc9-842e-66ca7a4ee15f,7f2d70bd-0e7e-43fe-8583-25206cd098d4,"nums = [3,2,4], target = 6","[0,1]",true,13
+6a2c843d-b5db-4caf-88b1-cd9b3d1c6d3d,0572c43a-153a-4a35-b203-fa7657f1f1cb,"nums = [3,2,4], target = 6",true,true,13
+703024da-6f6a-47c7-a301-ebebd9407470,f7562a6b-50e0-4e3f-9443-ddb25d6be578,(),"[1,2,3,4,5]",false,21
+7049b10d-d033-49fb-9d43-6c25026f99b3,4e989d16-0a20-4116-9f5d-c25eaaf327e2,(),false,true,23
+704f0de7-97d3-4ea2-a4ad-c8d2bf70e154,74b5eb84-bffc-4f4a-b224-258d8deb67dc,"[-2,1,-3,4,-1,2,1,-5,4]",true,false,11
+71c7aa9a-f8e5-4934-871a-ef5d6af57d4e,0760ab0a-dad2-42aa-82cb-e7c56d7336f2,()[]{},"[0,1]",true,12
+721e0335-19f7-4d1e-a8b8-df622efa596f,b3c0e8aa-ab47-4778-a1ee-cc915f606b65,(),"[1,2]",true,21
+726385d0-dad7-47c9-85f1-206ecd1c8c66,a297ee83-7689-4c72-a337-4d5d98ebd83b,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",false,14
+73a682d7-1b5d-41e0-83de-a98b35692193,9674c61f-6c68-49c1-bc96-bd053fdbac9e,"[1,2,3,4,5]","[1,2]",false,19
+75e64787-2f75-452b-ab01-842c4a4c2024,d7c09961-9dc8-499b-86fa-35d8d161a002,"nums = [3,3], target = 6",false,true,21
+76d23abd-10df-4573-a8d2-34a74921b249,0581dd4a-0766-4702-9722-81de8ac37260,()[]{},false,false,23
+78faec0f-e66f-436a-b4f2-dd44b5269996,6dde01b9-52ad-4e8c-88dc-eccc4390274b,"nums = [3,3], target = 6",true,false,17
+791cf76a-4c88-46ab-814c-ac49a51ff0ec,9674c61f-6c68-49c1-bc96-bd053fdbac9e,"[2,7,11,15], 9",true,false,13
+79a67b9d-b22f-4c31-8011-02a29a4c8711,163d2322-03e1-49af-8834-9023652fa2aa,()[]{},"[0,1]",false,22
+79f709b5-885f-4284-9c40-21b446c6861c,21883c08-f281-4747-8e08-699e76b7e6d5,"nums = [3,3], target = 6","[1,2]",true,14
+7c0bbb90-a491-4d95-9f42-6aae1bac0308,a2b0b410-8a13-494e-a527-f4d350513be5,()[]{},"[1,2]",true,18
+7c5c7310-e45b-4cca-9460-f1bbb4b99315,b1c81e34-3127-4bfa-8051-4f6c15b7f64a,(],"[1,2]",true,12
+7cb50de4-a910-4a02-97b5-dd783ff8b9f9,6dde01b9-52ad-4e8c-88dc-eccc4390274b,"[-2,1,-3,4,-1,2,1,-5,4]",true,false,14
+7d0b151f-5f6a-438d-aa1f-cf4d3b44a436,b664c08f-f336-48ce-8b24-2de40e116ab7,(],"[0,1]",true,10
+7d528a65-ca9e-4ea1-b873-f0e05236ee4d,82559bb9-ad22-4b2d-b4e9-874b657c2f0b,"[1,2,3,4,5]",true,true,10
+7edac1b0-2bf4-4a99-9d61-bb61a14be151,a2b0b410-8a13-494e-a527-f4d350513be5,"nums = [3,2,4], target = 6",6,false,23
+7f24e237-0cfd-44df-9082-d34b41460269,8627b842-e436-4f1e-ad00-8e6c7c4434c9,"[2,7,11,15], 9","[1,2]",true,19
+7f5d8b98-3343-4ab2-bf4f-2c715312d021,c82f4d35-7c53-4935-a43a-fa59bbd7cd1d,"nums = [3,2,4], target = 6","[0,1]",false,17
+7f88af4d-f579-47bb-847d-a5307ffe7268,f7562a6b-50e0-4e3f-9443-ddb25d6be578,(),"[0,1]",true,15
+80ae4fd1-e397-45c9-85a3-021d6e6e4e6a,f7562a6b-50e0-4e3f-9443-ddb25d6be578,"[2,7,11,15], 9","[0,1]",true,20
+812bb407-8cec-4bd4-a3a3-f9983cbd6ebf,76599101-ae4f-4535-ad83-7c0fe10f130b,"[1,2,3,4,5]","[0,1]",false,14
+81cf2bce-bbf7-4979-be73-ee9fe06e8eb9,dced9d12-b163-4236-9637-1b09659d12b2,"nums = [3,3], target = 6",6,false,15
+8236937b-378e-49ec-a065-ea54a3d0e6ba,425e1433-5d12-4a76-8347-846bbe62833d,"nums = [3,2,4], target = 6","[0,1]",true,23
+830968d1-9df2-4290-8cae-ba5e84345ae5,e36c7a59-990b-4f2f-be2c-4a0435f42b34,"nums = [3,3], target = 6",false,false,13
+84463867-04fe-4e68-9781-bd1f0676972d,0760ab0a-dad2-42aa-82cb-e7c56d7336f2,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",false,20
+856a02db-053c-414e-b59a-0bbee6db2121,a19d3aef-f84b-4b47-845e-49a8a1a3b379,"nums = [3,2,4], target = 6","[0,1]",true,15
+86ca1cce-6508-4df0-9074-b58c354ed752,208a381e-db3e-458e-a082-53ec0f87488a,"[1,2,3,4,5]",true,false,22
+875a2ed6-b4f1-4606-bd36-e0822f6d08fa,213e641c-6fb5-4a1d-9738-42d9a07baee5,(),false,true,18
+877e5f9c-04e4-4b9d-b856-8dd0a2b44b8b,82559bb9-ad22-4b2d-b4e9-874b657c2f0b,(),true,false,14
+87f52156-c780-444c-b906-0ed3d5c82b1e,21883c08-f281-4747-8e08-699e76b7e6d5,(),"[0,1]",false,15
+89bd6eb6-349c-4d22-b4d7-1fc3423456c2,492258b1-2cee-4a6e-99a0-160f0f3855e0,"[1,2,3,4,5]","[0,1]",false,25
+8a5f3e2d-bb2d-4b51-a4f9-67ce5647d9d2,8b303556-cb62-48ce-9a84-6653c19275c8,(),"[0,1]",true,15
+8bf25356-c01b-4353-8a02-8b052d658bc6,1d837fbc-398d-4a6d-a9ca-30b05c5cc64d,()[]{},"[1,2,3,4,5]",false,17
+8c04f6f8-5ea1-4b36-9047-235546c08bb5,0572c43a-153a-4a35-b203-fa7657f1f1cb,"nums = [3,2,4], target = 6",true,false,25
+91d10635-673f-48d8-9b86-2c832834b353,a2b0b410-8a13-494e-a527-f4d350513be5,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",true,12
+9544e0d7-2e4a-4b00-8c8d-44a3928696fe,7009a7a4-5386-4a88-bd5a-ebdfeb488ce3,"[1,2,3,4,5]","[1,2]",true,12
+95773f45-c62b-490f-aa02-57d07dda29c3,7f2d70bd-0e7e-43fe-8583-25206cd098d4,"[1,2,3,4,5]","[0,1]",false,13
+97856555-ecf6-4ca7-a714-9ec5c4de2789,82e3a1da-332b-475f-952b-3e1bfbed96d9,()[]{},"[0,1]",true,10
+98fef0e3-d2a0-4937-b024-d8e276b7c592,3faed6b3-0d5a-4981-b105-6aa0e09d538a,"nums = [3,2,4], target = 6",false,false,19
+990aae09-cc49-43a9-814b-326112c0d08f,74dcbeb9-636b-40dd-b7b7-43262c2a5949,"nums = [3,2,4], target = 6",true,true,14
+9918f3b9-55f6-45e7-a74d-e161f9526d7c,74dcbeb9-636b-40dd-b7b7-43262c2a5949,"nums = [3,2,4], target = 6","[1,2,3,4,5]",true,19
+9b0da68b-bc90-4866-9569-07da9648eca1,9674c61f-6c68-49c1-bc96-bd053fdbac9e,"[2,7,11,15], 9","[0,1]",true,23
+9c049179-3782-4f6a-81ef-2ad4c8ba7eab,8627b842-e436-4f1e-ad00-8e6c7c4434c9,"[2,7,11,15], 9",true,false,24
+9d5b3ed6-1cf1-4af8-b186-62823842f30a,9674c61f-6c68-49c1-bc96-bd053fdbac9e,(),"[1,2]",true,20
+9fde873d-f50b-4065-912f-74df01592f0d,222bef8f-0b26-421f-9291-574400a7d9ea,(),6,false,22
+a0445807-e323-4931-b4c0-4b3affc43059,8fa9b446-07c0-4c22-90cf-37c7b6f830c3,"nums = [3,2,4], target = 6","[1,2]",true,12
+a0bc6f7a-bd25-4844-99ab-7924f35d42a4,7f2d70bd-0e7e-43fe-8583-25206cd098d4,"[1,2,3,4,5]","[1,2]",true,17
+a1b2a28a-a63a-4e8f-9d6b-cd0f2cf7b59d,6dde01b9-52ad-4e8c-88dc-eccc4390274b,(],true,true,10
+a27aabfa-29b0-4a7d-a0e3-04ae1f90c506,0572c43a-153a-4a35-b203-fa7657f1f1cb,(],true,false,16
+a34af9a9-0914-44eb-b025-784c0184db12,b40d3f97-8db8-4082-9e24-2ef566dc1a57,"[-2,1,-3,4,-1,2,1,-5,4]",6,true,15
+a3c482c6-62c1-45fb-a5d9-2c5f3605bc0a,a19d3aef-f84b-4b47-845e-49a8a1a3b379,"[2,7,11,15], 9","[0,1]",false,10
+a4b8d3c6-beaf-4c18-a00d-ea8688b67911,163d2322-03e1-49af-8834-9023652fa2aa,(],"[0,1]",false,24
+a57fddf1-9c96-4992-bb59-bf1ced156638,d6b67eb1-1060-47be-9632-8a6c46f88179,"nums = [3,3], target = 6",false,false,25
+a6589bb3-5d86-4b04-b549-7c3898dc6aff,208a381e-db3e-458e-a082-53ec0f87488a,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",false,14
+a6e0579c-8f53-450f-b3e1-1201088fcb0a,b664c08f-f336-48ce-8b24-2de40e116ab7,(],"[1,2]",false,19
+a7d4e4b1-c307-40aa-86fa-a1bcec704c79,458c7f95-8a34-49d5-b047-b628b340d8ce,"[2,7,11,15], 9","[0,1]",false,22
+a9310229-639a-4596-a788-b751f7ca658f,82559bb9-ad22-4b2d-b4e9-874b657c2f0b,"nums = [3,3], target = 6","[1,2,3,4,5]",false,10
+aa201153-b1f5-42d1-a439-e875cb98c003,b664c08f-f336-48ce-8b24-2de40e116ab7,(],true,true,21
+aa856c9b-a1ad-4ee3-b3e3-4f927c118765,4e989d16-0a20-4116-9f5d-c25eaaf327e2,(],6,true,20
+ad0e19f0-227e-4315-97d7-eecaadda9a20,1d837fbc-398d-4a6d-a9ca-30b05c5cc64d,"[2,7,11,15], 9","[1,2,3,4,5]",true,16
+ae4d392d-d23a-46e0-a49e-a35bc55314c7,7009a7a4-5386-4a88-bd5a-ebdfeb488ce3,(),true,true,24
+aeb859fe-ec86-4abb-8045-2f69be1daa56,b1c81e34-3127-4bfa-8051-4f6c15b7f64a,"nums = [3,3], target = 6",false,false,22
+aff03ce2-03f2-46ce-a180-6e54debd264e,4c5b6375-87dc-4811-ac12-7d4752a080b4,"[2,7,11,15], 9","[0,1]",false,24
+b0444a4d-79a8-43b2-a4b5-e831cab9a0cd,0760ab0a-dad2-42aa-82cb-e7c56d7336f2,"nums = [3,3], target = 6","[1,2,3,4,5]",true,10
+b114b7fb-8e37-4c06-a09a-5d1f0436bc98,b40d3f97-8db8-4082-9e24-2ef566dc1a57,(),false,false,18
+b154c7e9-364c-47eb-86bd-39fa5e887330,8627b842-e436-4f1e-ad00-8e6c7c4434c9,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",false,22
+b32cf054-87a8-4acd-8379-7c531dacaa58,8b303556-cb62-48ce-9a84-6653c19275c8,"[2,7,11,15], 9",6,false,10
+b4a3ba92-5925-498d-b2d5-8b13e83bf3d7,0760ab0a-dad2-42aa-82cb-e7c56d7336f2,(],"[0,1]",false,18
+b55b906b-6bd7-42da-9a95-250d69135693,067b3217-8633-43a3-8b6e-ed13881071d7,()[]{},false,true,21
+b587ff8d-7785-427b-b4c4-307c8a1d8b84,3df99d4c-800e-486a-93c8-3451c5fec47a,"nums = [3,2,4], target = 6","[0,1]",true,16
+b6043924-3e79-4aaf-9bce-42a8cdf3f1f2,e0fdc287-f8e1-4a9e-b470-d785e6545247,"[1,2,3,4,5]","[0,1]",true,15
+b6b92cb6-1d1f-4a57-bbfe-5b3601177022,c82f4d35-7c53-4935-a43a-fa59bbd7cd1d,()[]{},true,true,23
+b6ebe95c-60d0-44c4-aa36-2560124b43ac,3faed6b3-0d5a-4981-b105-6aa0e09d538a,"nums = [3,2,4], target = 6","[0,1]",false,23
+b8ff872f-675b-4811-8ce5-99a5e21ebe20,21883c08-f281-4747-8e08-699e76b7e6d5,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",true,19
+b9a1ac14-43d2-4c41-8596-8b661675f9a7,82e3a1da-332b-475f-952b-3e1bfbed96d9,(),"[1,2,3,4,5]",false,18
+b9da85c2-bf7d-4d32-a39b-34cdb7beacff,1061dfc4-57ef-49d2-9013-cdbc516db951,"nums = [3,2,4], target = 6",false,true,24
+bacad34e-cb99-48dc-a60b-d0962c34efb7,8b303556-cb62-48ce-9a84-6653c19275c8,()[]{},"[1,2,3,4,5]",false,12
+bc0c4893-1a31-471e-91a1-12190eacce54,4e989d16-0a20-4116-9f5d-c25eaaf327e2,"nums = [3,2,4], target = 6","[0,1]",true,11
+bc13f36e-f8d1-4081-8f73-1a540afa9d11,9cd5246b-09d6-44c5-a7ba-ccb4e71c2992,()[]{},true,true,20
+bc8074f2-92c3-44f9-8fe8-e7d2f77b93c3,1e055426-e6f8-4458-8235-9d1adc534d1d,()[]{},6,false,24
+bddcf9ef-ceba-4c62-bfe9-6d2651fd3ac0,d7c09961-9dc8-499b-86fa-35d8d161a002,(],"[0,1]",true,17
+be815719-4f51-47e9-bcf6-ae6a7ce184c1,b3c0e8aa-ab47-4778-a1ee-cc915f606b65,"[1,2,3,4,5]",true,true,11
+bf72b7d5-610a-43f6-abc0-0f45168c9a07,74b5eb84-bffc-4f4a-b224-258d8deb67dc,"[1,2,3,4,5]",false,true,16
+bfb474e6-80ed-4083-b0c7-e3beace53222,6dde01b9-52ad-4e8c-88dc-eccc4390274b,()[]{},"[1,2]",true,13
+c195b70a-b768-446e-82c5-546ee8fe8e5f,222bef8f-0b26-421f-9291-574400a7d9ea,"nums = [3,2,4], target = 6",false,false,10
+c39dd331-2580-441a-99f6-08cbe00fbc59,5df72255-37f7-4919-b4ee-efd821e8958b,"[2,7,11,15], 9","[1,2]",true,12
+c3e88dc4-4dfb-4ae2-a881-5ebeb5a2df15,1e055426-e6f8-4458-8235-9d1adc534d1d,()[]{},"[1,2,3,4,5]",true,15
+c3eeffdb-8c88-47e5-bbde-a37832abc898,a19d3aef-f84b-4b47-845e-49a8a1a3b379,"[2,7,11,15], 9","[0,1]",true,11
+c4173ede-67b6-4d7e-85bc-dd10e46ee9cd,7009a7a4-5386-4a88-bd5a-ebdfeb488ce3,(],"[1,2]",false,23
+c485e1dc-b11f-4cb6-bb51-635fed1dc028,8b303556-cb62-48ce-9a84-6653c19275c8,"[-2,1,-3,4,-1,2,1,-5,4]",false,true,20
+c4c040fd-969b-48c0-bda0-d84ee9864d4c,ef0d036c-5f16-4eeb-80b0-f760d2767b0d,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",true,25
+c5187072-d07b-4492-805d-1fc9963374f3,3df99d4c-800e-486a-93c8-3451c5fec47a,"[2,7,11,15], 9","[1,2,3,4,5]",true,13
+c56eb902-f406-40fd-a030-74a3442e57c8,a0891cb2-9f58-493d-a4c4-d413ba740fc3,"nums = [3,3], target = 6","[0,1]",false,11
+c5ae0abc-4355-4868-9400-3216b58c0686,47841d16-cd9f-4ab0-9f5e-a053ffcb0487,"[1,2,3,4,5]","[0,1]",false,13
+c73370ec-ee0e-4312-8c3c-29158c9dd122,74dcbeb9-636b-40dd-b7b7-43262c2a5949,(],true,false,13
+cbe51735-01f9-4c82-ac09-f26c831739ac,0581dd4a-0766-4702-9722-81de8ac37260,(),"[1,2]",true,22
+ce742f10-a804-4df2-bd21-3129ca6817bd,1543d412-dc5a-4925-8cba-f814cd094a93,(],"[0,1]",true,17
+d28997fb-8c49-4c47-9f12-b3c948d49259,7009a7a4-5386-4a88-bd5a-ebdfeb488ce3,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",true,14
+d4e9c091-c727-43c1-b307-c6508bb34288,5df72255-37f7-4919-b4ee-efd821e8958b,(],true,true,15
+d5fbfc6d-9aaa-49ce-9c29-937460ad4586,e0fdc287-f8e1-4a9e-b470-d785e6545247,"nums = [3,2,4], target = 6",true,false,10
+d60d42d8-11ba-4ec5-afef-e6c03d5841bc,492258b1-2cee-4a6e-99a0-160f0f3855e0,(),6,true,11
+d79e1fb1-312e-4975-85ca-dc8a353c189c,208a381e-db3e-458e-a082-53ec0f87488a,(),"[1,2]",true,11
+dbbfada4-3e2b-4dd6-91eb-c63e530b5ae9,b40d3f97-8db8-4082-9e24-2ef566dc1a57,"[2,7,11,15], 9",true,false,22
+dc6eec99-ae68-4dbd-852f-558186ec97d1,d7c09961-9dc8-499b-86fa-35d8d161a002,"[1,2,3,4,5]","[1,2]",false,15
+debdba72-6859-4119-9d6e-e1ba4dd31ef9,d7c09961-9dc8-499b-86fa-35d8d161a002,(),"[1,2,3,4,5]",true,20
+dfcee0a9-6ee6-49fe-b94d-c00e063eb3cf,163d2322-03e1-49af-8834-9023652fa2aa,()[]{},true,true,24
+e09b41cf-31ea-4692-9cb3-4a72f315ddb5,dced9d12-b163-4236-9637-1b09659d12b2,(),"[0,1]",false,13
+e0cd6456-d526-4b2c-8c59-c92f8453ff67,3df99d4c-800e-486a-93c8-3451c5fec47a,()[]{},true,true,15
+e0f0b573-a020-427c-b77c-c6e34287a386,3df99d4c-800e-486a-93c8-3451c5fec47a,(],"[1,2,3,4,5]",true,18
+e156f909-6bfe-4b54-ab85-0e416cd1c665,492258b1-2cee-4a6e-99a0-160f0f3855e0,()[]{},"[0,1]",true,19
+e35f66d5-ed7d-4d62-a4ad-8d25c3140b12,067b3217-8633-43a3-8b6e-ed13881071d7,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",true,13
+e548e345-815a-429a-a775-4adbd45b61ed,6dde01b9-52ad-4e8c-88dc-eccc4390274b,(],"[0,1]",true,19
+e8d1e64e-58f2-4340-bfb8-aff5412d2ba6,ef0d036c-5f16-4eeb-80b0-f760d2767b0d,(),true,false,12
+ea0d1ee8-9a31-45e9-baa7-d07a51d193ef,8b303556-cb62-48ce-9a84-6653c19275c8,"[2,7,11,15], 9",true,true,16
+eb8c56c3-c18d-4ff0-8c9a-9b7ef4357692,3faed6b3-0d5a-4981-b105-6aa0e09d538a,"nums = [3,3], target = 6","[1,2,3,4,5]",true,23
+ec1b2af6-6b65-4032-a77d-53a5d3235974,d7c09961-9dc8-499b-86fa-35d8d161a002,"nums = [3,2,4], target = 6","[1,2,3,4,5]",false,13
+ec912712-4155-43ea-9e77-0b68004b64af,458c7f95-8a34-49d5-b047-b628b340d8ce,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",false,16
+ec9b6806-9a27-4fa1-b765-fc0c9276e30c,0572c43a-153a-4a35-b203-fa7657f1f1cb,(),"[1,2,3,4,5]",true,23
+edfdbaf7-b063-4cca-9d9d-c94efb2dac94,41fdefa4-6590-4652-b9b9-5e6cb2e6d27a,"nums = [3,2,4], target = 6",false,true,14
+ee4afbe2-f8d6-487c-a6c0-a693770d7ae2,8b303556-cb62-48ce-9a84-6653c19275c8,"nums = [3,3], target = 6","[0,1]",true,12
+ee9c8093-0ed5-401f-b72a-06cdb893a6e3,47841d16-cd9f-4ab0-9f5e-a053ffcb0487,"nums = [3,3], target = 6",false,true,10
+ef071d23-1cc4-499c-8fbf-03e4494b37d0,b1c81e34-3127-4bfa-8051-4f6c15b7f64a,(),"[1,2,3,4,5]",true,16
+f18c41eb-f409-4644-baf6-e76af3253454,4c5b6375-87dc-4811-ac12-7d4752a080b4,"nums = [3,3], target = 6",false,true,13
+f2863304-b317-496d-a90f-cb2b04ab9fb5,492258b1-2cee-4a6e-99a0-160f0f3855e0,(],"[0,1]",true,14
+f3377ea2-3d24-4cae-841f-eb459b297f43,4e989d16-0a20-4116-9f5d-c25eaaf327e2,"nums = [3,2,4], target = 6",6,false,21
+f44b19b9-bd66-4a19-be69-2ca1641692fd,5df72255-37f7-4919-b4ee-efd821e8958b,()[]{},6,true,23
+f4ea14a5-e683-4812-a89c-b7d078777449,82e3a1da-332b-475f-952b-3e1bfbed96d9,"nums = [3,2,4], target = 6","[1,2]",false,10
+f519b97d-9f40-4989-be82-0f8c24a0db36,7009a7a4-5386-4a88-bd5a-ebdfeb488ce3,"[-2,1,-3,4,-1,2,1,-5,4]","[1,2]",false,21
+f5cbc468-d6c9-4ef2-8504-50eef28d8e04,74dcbeb9-636b-40dd-b7b7-43262c2a5949,"[1,2,3,4,5]",true,true,25
+f6259219-016a-4997-ad5f-e1aa19505078,a297ee83-7689-4c72-a337-4d5d98ebd83b,()[]{},6,true,24
+f7b36c2f-c110-4964-955f-04dd8162a8d0,47841d16-cd9f-4ab0-9f5e-a053ffcb0487,(),"[0,1]",true,10
+f89cfcfd-08bf-44a9-86ff-7684bf4cb8d2,dced9d12-b163-4236-9637-1b09659d12b2,()[]{},true,true,13
+f9734d16-9844-463d-a9ca-3b07bdd45a60,a297ee83-7689-4c72-a337-4d5d98ebd83b,"[-2,1,-3,4,-1,2,1,-5,4]","[0,1]",true,12
+fa5becaa-828f-4378-b5e4-26993709ad33,3df99d4c-800e-486a-93c8-3451c5fec47a,()[]{},"[1,2,3,4,5]",false,13
+fac043d0-366b-4c34-8751-9f4ee1f86f03,5df72255-37f7-4919-b4ee-efd821e8958b,"nums = [3,3], target = 6",true,false,12
+fac56ccd-4439-4fb5-b681-faf316e364e9,8fa9b446-07c0-4c22-90cf-37c7b6f830c3,(],"[0,1]",false,23
+fadf7e11-0be1-49b4-8292-7a98ef28d598,067b3217-8633-43a3-8b6e-ed13881071d7,"nums = [3,3], target = 6","[1,2]",false,17
+fbdb1d51-1229-4094-8619-510b42187197,1061dfc4-57ef-49d2-9013-cdbc516db951,"[-2,1,-3,4,-1,2,1,-5,4]",6,true,23
+fbffb7d8-bd85-46c1-903a-46960f2f236e,1d837fbc-398d-4a6d-a9ca-30b05c5cc64d,"nums = [3,2,4], target = 6","[1,2]",false,14
+fcd737b8-0612-42f8-9b1d-b07f68bf2453,bb340a40-b31f-4e2b-b20e-42c5fcb02cce,(],"[1,2]",false,13
+fceb3cd0-ddc6-4fce-a913-f5f9732ae877,1061dfc4-57ef-49d2-9013-cdbc516db951,"nums = [3,3], target = 6",6,false,11
+fd952644-ac43-4718-bf9e-e8fbd3f4b0e0,b3c0e8aa-ab47-4778-a1ee-cc915f606b65,"nums = [3,3], target = 6","[1,2]",false,10
+fdf6daf7-908b-4041-afdc-4a5c7c1bb0da,b664c08f-f336-48ce-8b24-2de40e116ab7,"[-2,1,-3,4,-1,2,1,-5,4]",6,false,18
+ffcbfc5e-4f59-442f-9fb0-79e3b50ffcf7,0572c43a-153a-4a35-b203-fa7657f1f1cb,(],6,true,12
