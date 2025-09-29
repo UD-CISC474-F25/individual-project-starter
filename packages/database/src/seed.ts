@@ -79,13 +79,17 @@ async function main() {
     const randomInstructor = faker.helpers.arrayElement(instructors).id;
     const maybeTAs =
       i === 0 ? [] : faker.helpers.arrayElements(tas, { min: 1, max: 2 });
-    const maybeStudents =
-      i === 1 ? [] : faker.helpers.arrayElements(students, { min: 4, max: 10 });
+    // Always pick at least 4 students, up to 10, re-using existing student IDs
+    const maybeStudents = faker.helpers.arrayElements(students, {
+      min: 20,
+      max: 30,
+    });
 
     const course = await prisma.course.create({
       data: {
         courseName: faker.company.catchPhrase(),
         professorId: randomInstructor,
+        // re-use *existing* user IDs for TAs and students
         tas: { connect: maybeTAs.map((t) => ({ id: t.id })) },
         students: { connect: maybeStudents.map((s) => ({ id: s.id })) },
       },
