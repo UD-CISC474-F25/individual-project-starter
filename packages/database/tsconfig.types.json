@@ -8,5 +8,5 @@
     "noEmit": false,
     "rootDir": "./src"
   },
-  "include": ["src"] // include your generator output
+  "include": ["src", "generated"] // include your generator output
 }
